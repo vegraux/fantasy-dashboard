@@ -1,3 +1,5 @@
+import pathlib
+
 import dash
 import dash_bootstrap_components as dbc
 import pandas as pd
@@ -7,7 +9,7 @@ from dash import dcc, html
 from dash.dependencies import Input, Output
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.JOURNAL])
-data = pd.read_csv("data.csv", index_col=0)
+data = pd.read_csv(pathlib.Path(__file__).parent / "data.csv", index_col=0)
 
 var_map = {
     "Runde": "event",
