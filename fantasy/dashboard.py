@@ -7,8 +7,10 @@ import plotly.express as px
 import plotly.graph_objs as go
 from dash import dcc, html
 from dash.dependencies import Input, Output
+from flask import Flask
 
-def create_app() -> dash.Dash:
+
+def create_app() -> Flask:
 
     app = dash.Dash(__name__, external_stylesheets=[dbc.themes.JOURNAL])
     data = pd.read_csv(pathlib.Path(__file__).parent / "data.csv", index_col=0)
@@ -146,7 +148,7 @@ def create_app() -> dash.Dash:
     ) -> go.Figure:
         return get_moment_figure(variable, round_range[0], round_range[1])
 
-    return app
+    return app.server
 
 
 if __name__ == "__main__":
