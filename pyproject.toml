@@ -1,0 +1,148 @@
+[project]
+name = "fantasy"
+description = "Application for visualising fantasy data"
+authors = [{name="Vegard Solberg", email="vegardsolberg@hotmail.com"}]
+requires-python = ">=3.12"
+dynamic = ["version"]
+
+dependencies = [
+    "gunicorn",
+    "pydantic>2",
+    "uvicorn",
+    "pydantic-settings>2.6.0",
+    "dash",
+    "httpx>=0.27.2",
+    "dash-bootstrap-components",
+    "pandas>=2.2.3",
+    "matplotlib>=3.9.2",
+    "ffmpeg>=1.4",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "pytest-cov",
+    "pytest-integration",
+    "coverage",
+    "polyfactory>=2.18.0",
+]
+
+[tool.setuptools_scm]
+version_scheme="release-branch-semver"
+local_scheme = "no-local-version"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+  "A", # flake8-builtins
+  "ANN", # flake8-annotations
+  "ARG", # flake8-unused-arguments
+  "B", # flake8-bugbear
+  "C4", # flake8-comprehensions
+  "C90", # mccabe
+  "COM", # flake8-commas
+  "DTZ", # flake8-datetimez
+  "D", # pydocstyle
+  "E", "W", # pycodestyle
+  "F", # Pyflakes
+  "FLY", # flynt
+  "FURB", # refurb
+  "I", # isort
+  "N", # pep8-nameing
+  "NPY", # numpy specific rules
+  "PERF", # Perflint
+  "PIE", # flake8-pie
+  "RUF", # Ruff specific rules
+  "S", # flake8-bandit
+  "SIM", # flake8-simplify
+  "T20", # flake8-print
+  "TCH", # flake8-type-checking
+  "TRY", # tryceratops
+  "UP", # pyupgrade
+  "YTT", # flake8-2020
+]
+
+ignore = ['S101', 'COM812', 'ANN101', 'ANN102', 'ANN401', 'TRY003', 'D100',  'D101', 'D102', 'D103', 'D104', 'D105', 'D107']
+
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = ["A", "B", "C", "D", "E", "F", "G", "I", "N", "Q", "S", "T", "W", "ANN", "ARG", "BLE", "COM", "DJ", "DTZ", "EM", "ERA", "EXE", "FBT", "ICN", "INP", "ISC", "NPY", "PD", "PGH", "PIE", "PL", "PT", "PTH", "PYI", "RET", "RSE", "RUF", "SIM", "SLF", "TCH", "TID", "TRY", "UP", "YTT"]
+unfixable = []
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.pep8-naming]
+classmethod-decorators = ["pydantic.field_validator"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/test*.py" = ["ANN201", "S608"]
+
+
+[tool.ruff.lint.flake8-import-conventions]
+[tool.ruff.lint.flake8-import-conventions.aliases]
+# Declare the default aliases.
+numpy = "np"
+pandas = "pd"
+scipy = "sp"
+
+[tool.pytest.ini_options]
+log_file = "pytest.log"
+log_level = "DEBUG"
+log_file_format = "%(asctime)s - %(name)s - %(levelname)s: %(message)s"
+norecursedirs = "_build tmp*  __pycache__ src prof wheel_files"
+filterwarnings = [
+]
+
+[tool.coverage.report]
+# Regexes for lines to exclude from consideration
+exclude_lines = [
+              "pragma: no cover",
+              "raise AssertionError",
+              "raise NotImplementedError",
+              "if verbose:",
+              "if 0:",
+              "if False:",
+              ]
+skip_covered = true
+show_missing = true
+precision = 2
+
+[tool.coverage.run]
+branch = true
+source = ["weather"]
+omit = ["tests/*"]
+
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"

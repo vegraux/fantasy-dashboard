@@ -1,0 +1,241 @@
+,event,points,total_points,rank,rank_sort,overall_rank,percentile_rank,bank,value,event_transfers,event_transfers_cost,points_on_bench,player_name,entry_name
+0,1,61,61,23717,23783,23717,55,10,1000,0,0,9,Vegard Solberg,Mokka Schmokka
+1,2,42,99,20122,20147,26144,45,17,1001,2,4,4,Vegard Solberg,Mokka Schmokka
+2,3,65,164,32792,32802,29527,70,32,1005,1,0,4,Vegard Solberg,Mokka Schmokka
+3,4,56,220,6662,6693,22074,15,23,1006,0,0,0,Vegard Solberg,Mokka Schmokka
+4,5,44,264,15989,16016,19254,35,23,1011,0,0,3,Vegard Solberg,Mokka Schmokka
+5,6,56,316,1821,1822,10588,5,8,1013,3,4,3,Vegard Solberg,Mokka Schmokka
+6,7,34,350,46084,46091,21045,95,0,1016,1,0,0,Vegard Solberg,Mokka Schmokka
+7,8,48,394,32791,32796,25459,70,11,1014,2,4,-4,Vegard Solberg,Mokka Schmokka
+8,9,65,459,1125,1127,15208,5,14,1016,1,0,1,Vegard Solberg,Mokka Schmokka
+9,10,101,560,1732,1744,7963,5,14,1016,0,0,22,Vegard Solberg,Mokka Schmokka
+10,11,42,602,21365,21379,8160,45,12,1020,1,0,2,Vegard Solberg,Mokka Schmokka
+11,12,74,668,2237,2242,5384,5,34,1021,3,8,0,Vegard Solberg,Mokka Schmokka
+12,13,67,731,4395,4398,4047,10,22,1027,2,4,0,Vegard Solberg,Mokka Schmokka
+13,14,46,777,6472,6486,3065,15,17,1030,1,0,1,Vegard Solberg,Mokka Schmokka
+14,15,31,804,32065,32068,5439,65,33,1030,2,4,0,Vegard Solberg,Mokka Schmokka
+15,16,43,847,5005,5022,4240,10,22,1033,1,0,0,Vegard Solberg,Mokka Schmokka
+16,17,49,896,11164,11173,3911,25,48,1035,1,0,6,Vegard Solberg,Mokka Schmokka
+17,18,37,933,21915,21939,4661,45,48,1039,0,0,18,Vegard Solberg,Mokka Schmokka
+18,19,78,1011,1639,1639,2403,5,25,1034,1,0,1,Vegard Solberg,Mokka Schmokka
+19,20,76,1087,5243,5249,1826,15,25,1040,0,0,3,Vegard Solberg,Mokka Schmokka
+20,21,63,1150,725,727,1096,5,57,1045,2,0,5,Vegard Solberg,Mokka Schmokka
+21,22,82,1228,6724,6728,1428,15,25,1048,2,4,14,Vegard Solberg,Mokka Schmokka
+22,23,61,1289,3842,3857,1190,10,25,1051,0,0,20,Vegard Solberg,Mokka Schmokka
+23,24,97,1386,980,982,774,5,15,1048,2,0,13,Vegard Solberg,Mokka Schmokka
+24,25,28,1414,44530,44564,967,90,15,1054,0,0,14,Vegard Solberg,Mokka Schmokka
+25,26,73,1487,976,983,678,5,3,1050,2,0,5,Vegard Solberg,Mokka Schmokka
+26,27,74,1561,3660,3664,581,10,3,1055,0,0,5,Vegard Solberg,Mokka Schmokka
+27,28,68,1629,4719,4729,584,10,10,1060,2,0,19,Vegard Solberg,Mokka Schmokka
+28,29,72,1701,5370,5383,606,15,9,1064,1,0,13,Vegard Solberg,Mokka Schmokka
+29,30,61,1762,3338,3344,534,10,5,1060,1,0,11,Vegard Solberg,Mokka Schmokka
+30,1,80,80,3091,3166,3091,10,0,1000,0,0,5,Haakon Edvardsen,Alejandro Lagoppsett
+31,2,43,123,17612,17720,3836,40,10,1005,1,0,19,Haakon Edvardsen,Alejandro Lagoppsett
+32,3,88,211,6147,6196,2020,15,25,1008,1,0,15,Haakon Edvardsen,Alejandro Lagoppsett
+33,4,57,268,6230,6274,1051,15,19,1010,1,0,9,Haakon Edvardsen,Alejandro Lagoppsett
+34,5,46,314,13880,13933,948,30,15,1012,1,0,0,Haakon Edvardsen,Alejandro Lagoppsett
+35,6,27,341,38049,38184,2539,80,7,1017,0,0,3,Haakon Edvardsen,Alejandro Lagoppsett
+36,7,62,403,12929,12968,2062,30,13,1020,1,0,4,Haakon Edvardsen,Alejandro Lagoppsett
+37,8,53,456,25187,25246,3511,55,33,1026,1,0,16,Haakon Edvardsen,Alejandro Lagoppsett
+38,9,40,496,24398,24468,4053,50,20,1027,1,0,10,Haakon Edvardsen,Alejandro Lagoppsett
+39,10,108,596,575,577,2057,5,15,1024,3,8,8,Haakon Edvardsen,Alejandro Lagoppsett
+40,11,36,632,32209,32396,2905,65,15,1025,0,0,4,Haakon Edvardsen,Alejandro Lagoppsett
+41,12,47,679,25303,25336,3779,50,4,1026,2,0,0,Haakon Edvardsen,Alejandro Lagoppsett
+42,13,81,756,400,402,1606,1,9,1024,2,4,9,Haakon Edvardsen,Alejandro Lagoppsett
+43,14,34,790,27810,27882,1881,55,49,1029,1,0,11,Haakon Edvardsen,Alejandro Lagoppsett
+44,15,54,840,7485,7529,1833,15,36,1031,2,4,0,Haakon Edvardsen,Alejandro Lagoppsett
+45,16,34,870,14315,14355,2203,30,45,1032,2,4,0,Haakon Edvardsen,Alejandro Lagoppsett
+46,17,51,921,8754,8826,1939,20,29,1035,1,0,6,Haakon Edvardsen,Alejandro Lagoppsett
+47,18,53,974,3748,3789,1509,10,31,1035,1,0,0,Haakon Edvardsen,Alejandro Lagoppsett
+48,19,92,1062,239,240,424,1,10,1040,2,4,10,Haakon Edvardsen,Alejandro Lagoppsett
+49,20,39,1101,37690,37703,1229,75,13,1040,1,0,6,Haakon Edvardsen,Alejandro Lagoppsett
+50,21,61,1162,1031,1042,734,5,15,1038,1,0,4,Haakon Edvardsen,Alejandro Lagoppsett
+51,22,82,1244,6508,6540,936,15,15,1041,0,0,15,Haakon Edvardsen,Alejandro Lagoppsett
+52,23,57,1301,6060,6132,865,15,36,1031,0,0,12,Haakon Edvardsen,Alejandro Lagoppsett
+53,24,88,1389,3059,3092,698,10,36,1034,0,0,6,Haakon Edvardsen,Alejandro Lagoppsett
+54,25,44,1433,12837,12886,582,25,29,1041,1,0,16,Haakon Edvardsen,Alejandro Lagoppsett
+55,26,61,1494,6549,6578,559,15,61,1041,1,0,18,Haakon Edvardsen,Alejandro Lagoppsett
+56,27,63,1557,11157,11190,645,25,26,1047,2,0,12,Haakon Edvardsen,Alejandro Lagoppsett
+57,28,60,1617,9851,9902,778,20,29,1047,1,0,9,Haakon Edvardsen,Alejandro Lagoppsett
+58,29,48,1665,22969,22980,1279,45,27,1048,1,0,7,Haakon Edvardsen,Alejandro Lagoppsett
+59,30,67,1732,1410,1421,1022,5,24,1049,1,0,5,Haakon Edvardsen,Alejandro Lagoppsett
+60,1,64,64,19408,19688,19408,45,0,1000,0,0,9,Magnus Aarli,Nypan al gaib
+61,2,64,128,761,775,2014,5,10,1003,1,0,9,Magnus Aarli,Nypan al gaib
+62,3,72,196,23796,23855,7395,50,0,1006,2,4,12,Magnus Aarli,Nypan al gaib
+63,4,59,255,4319,4359,3594,10,3,1007,1,0,6,Magnus Aarli,Nypan al gaib
+64,5,29,280,41904,41928,10580,90,3,1010,2,4,2,Magnus Aarli,Nypan al gaib
+65,6,16,296,49736,49738,21237,100,17,1012,1,0,4,Magnus Aarli,Nypan al gaib
+66,7,66,362,9058,9096,15252,20,10,1011,1,0,2,Magnus Aarli,Nypan al gaib
+67,8,56,418,20065,20175,15169,40,29,1010,0,0,7,Magnus Aarli,Nypan al gaib
+68,9,42,460,20882,20947,14789,45,16,1012,1,0,9,Magnus Aarli,Nypan al gaib
+69,10,76,536,19260,19279,14597,40,26,1016,1,0,3,Magnus Aarli,Nypan al gaib
+70,11,44,576,17685,17738,15116,35,24,1015,2,4,11,Magnus Aarli,Nypan al gaib
+71,12,54,630,15929,15963,13846,35,37,1019,1,0,0,Magnus Aarli,Nypan al gaib
+72,13,46,676,27053,27180,15015,55,37,1019,0,0,0,Magnus Aarli,Nypan al gaib
+73,14,57,729,854,855,11048,5,67,1019,3,4,3,Magnus Aarli,Nypan al gaib
+74,15,74,795,445,450,6761,1,52,1020,3,8,1,Magnus Aarli,Nypan al gaib
+75,16,21,816,37626,37641,8582,75,38,1026,1,0,2,Magnus Aarli,Nypan al gaib
+76,17,55,871,4986,5035,6952,10,53,1032,1,0,0,Magnus Aarli,Nypan al gaib
+77,18,51,922,5370,5441,5947,15,57,1037,1,0,2,Magnus Aarli,Nypan al gaib
+78,19,44,958,22098,22110,7153,45,32,1039,3,8,0,Magnus Aarli,Nypan al gaib
+79,20,65,1023,12903,12961,6953,30,9,1042,1,0,0,Magnus Aarli,Nypan al gaib
+80,21,38,1061,18413,18467,7378,40,10,1045,1,0,0,Magnus Aarli,Nypan al gaib
+81,22,121,1182,564,575,3566,5,23,1034,0,0,14,Magnus Aarli,Nypan al gaib
+82,23,51,1233,11677,11716,3567,25,28,1040,1,0,6,Magnus Aarli,Nypan al gaib
+83,24,82,1315,5999,6041,3301,15,29,1042,1,0,9,Magnus Aarli,Nypan al gaib
+84,25,42,1357,16996,17054,3105,35,11,1047,1,0,7,Magnus Aarli,Nypan al gaib
+85,26,69,1426,1945,1967,2419,5,2,1047,1,0,11,Magnus Aarli,Nypan al gaib
+86,27,81,1507,1633,1646,1813,5,0,1047,1,0,2,Magnus Aarli,Nypan al gaib
+87,28,65,1572,6055,6116,1856,15,0,1048,0,0,0,Magnus Aarli,Nypan al gaib
+88,29,74,1646,4196,4247,1779,10,0,1048,0,0,3,Magnus Aarli,Nypan al gaib
+89,30,57,1699,5642,5664,1820,15,7,1045,2,4,6,Magnus Aarli,Nypan al gaib
+90,1,80,80,3091,3101,3091,10,0,1000,0,0,3,Mikael Leksen,Norges tåblæserlag
+91,2,30,106,43224,43228,18367,90,5,1003,2,4,4,Mikael Leksen,Norges tåblæserlag
+92,3,105,211,535,537,2109,5,3,1005,1,0,12,Mikael Leksen,Norges tåblæserlag
+93,4,43,254,29151,29160,3789,60,3,1007,0,0,3,Mikael Leksen,Norges tåblæserlag
+94,5,51,305,7140,7154,2112,15,3,1010,0,0,1,Mikael Leksen,Norges tåblæserlag
+95,6,17,322,49515,49515,7935,100,24,1014,2,0,3,Mikael Leksen,Norges tåblæserlag
+96,7,82,404,1089,1091,1964,5,35,1013,1,0,1,Mikael Leksen,Norges tåblæserlag
+97,8,64,464,11777,11784,2354,25,55,1018,2,4,-4,Mikael Leksen,Norges tåblæserlag
+98,9,40,500,24677,24689,3462,50,1,1019,2,4,6,Mikael Leksen,Norges tåblæserlag
+99,10,90,590,6594,6597,2673,15,1,1021,0,0,29,Mikael Leksen,Norges tåblæserlag
+100,11,50,640,7458,7470,2053,15,12,1021,1,0,2,Mikael Leksen,Norges tåblæserlag
+101,12,28,668,46461,46472,5335,95,12,1021,0,0,0,Mikael Leksen,Norges tåblæserlag
+102,13,55,723,15459,15469,5135,35,67,1018,2,0,2,Mikael Leksen,Norges tåblæserlag
+103,14,45,768,7516,7519,4074,15,64,1022,1,0,3,Mikael Leksen,Norges tåblæserlag
+104,15,57,825,5376,5381,2949,15,64,1028,0,0,0,Mikael Leksen,Norges tåblæserlag
+105,16,38,863,8636,8643,2681,20,13,1026,0,0,4,Mikael Leksen,Norges tåblæserlag
+106,17,59,918,2693,2695,2098,10,9,1031,2,4,0,Mikael Leksen,Norges tåblæserlag
+107,18,59,977,1077,1081,1356,5,20,1035,1,0,0,Mikael Leksen,Norges tåblæserlag
+108,19,56,1029,10934,10939,1404,25,40,1038,2,4,0,Mikael Leksen,Norges tåblæserlag
+109,20,92,1121,637,638,624,5,57,1040,1,0,2,Mikael Leksen,Norges tåblæserlag
+110,21,40,1161,15890,15900,757,35,16,1043,1,0,0,Mikael Leksen,Norges tåblæserlag
+111,22,105,1262,2045,2047,553,5,3,1044,2,4,7,Mikael Leksen,Norges tåblæserlag
+112,23,40,1302,26044,26049,843,55,46,1042,1,0,16,Mikael Leksen,Norges tåblæserlag
+113,24,86,1384,4195,4197,812,10,55,1042,2,4,0,Mikael Leksen,Norges tåblæserlag
+114,25,44,1424,13029,13035,741,30,9,1046,2,4,8,Mikael Leksen,Norges tåblæserlag
+115,26,52,1476,16429,16457,892,35,9,1046,0,0,0,Mikael Leksen,Norges tåblæserlag
+116,27,71,1547,5413,5416,813,15,62,1040,2,0,3,Mikael Leksen,Norges tåblæserlag
+117,28,65,1612,6341,6355,874,15,62,1041,1,0,0,Mikael Leksen,Norges tåblæserlag
+118,29,41,1649,30776,30777,1686,60,9,1042,2,4,6,Mikael Leksen,Norges tåblæserlag
+119,30,49,1694,12384,12387,1962,25,11,1039,2,4,9,Mikael Leksen,Norges tåblæserlag
+120,1,70,70,11296,11593,11296,30,0,1000,0,0,10,Trond Flaarønning,Døden i Venedig
+121,2,31,101,41183,41300,23610,90,54,1002,1,0,9,Trond Flaarønning,Døden i Venedig
+122,3,69,170,26738,26885,25035,55,54,1003,0,0,15,Trond Flaarønning,Døden i Venedig
+123,4,57,227,5565,5728,17217,15,1,1006,0,0,1,Trond Flaarønning,Døden i Venedig
+124,5,57,284,3007,3088,8361,10,1,1011,0,0,-2,Trond Flaarønning,Døden i Venedig
+125,6,42,326,13384,13465,6404,30,15,1014,2,0,0,Trond Flaarønning,Døden i Venedig
+126,7,52,374,25910,25962,9752,55,18,1014,2,4,1,Trond Flaarønning,Døden i Venedig
+127,8,56,430,20982,21042,10525,45,37,1016,1,0,-3,Trond Flaarønning,Døden i Venedig
+128,9,56,482,4776,4804,7436,10,16,1014,2,4,6,Trond Flaarønning,Døden i Venedig
+129,10,89,571,7238,7318,5568,15,16,1015,0,0,35,Trond Flaarønning,Døden i Venedig
+130,11,42,613,19978,20231,5761,40,16,1018,0,0,5,Trond Flaarønning,Døden i Venedig
+131,12,53,662,17411,17443,6398,35,80,1021,3,4,1,Trond Flaarønning,Døden i Venedig
+132,13,33,695,43222,43318,10413,90,80,1025,0,0,4,Trond Flaarønning,Døden i Venedig
+133,14,41,736,13486,13553,9506,30,142,1022,2,0,5,Trond Flaarønning,Døden i Venedig
+134,15,66,794,1939,1958,6901,5,27,1024,3,8,0,Trond Flaarønning,Døden i Venedig
+135,16,24,814,31759,31785,8876,65,32,1027,2,4,6,Trond Flaarønning,Døden i Venedig
+136,17,51,865,8754,8847,7795,20,7,1031,1,0,2,Trond Flaarønning,Døden i Venedig
+137,18,56,921,2095,2136,6060,5,39,1033,1,0,1,Trond Flaarønning,Døden i Venedig
+138,19,18,939,48020,48093,9674,95,39,1034,0,0,0,Trond Flaarønning,Døden i Venedig
+139,20,73,1012,7358,7373,8171,15,64,1035,2,0,10,Trond Flaarønning,Døden i Venedig
+140,21,43,1055,12323,12391,8029,25,71,1031,1,0,2,Trond Flaarønning,Døden i Venedig
+141,22,105,1160,1952,1989,5026,5,12,1028,0,0,4,Trond Flaarønning,Døden i Venedig
+142,23,71,1231,938,960,3662,5,12,1032,0,0,11,Trond Flaarønning,Døden i Venedig
+143,24,95,1326,1288,1309,2764,5,13,1036,1,0,26,Trond Flaarønning,Døden i Venedig
+144,25,29,1355,44402,44442,3204,90,2,1043,2,0,7,Trond Flaarønning,Døden i Venedig
+145,26,63,1418,4520,4624,2772,10,2,1047,0,0,5,Trond Flaarønning,Døden i Venedig
+146,27,67,1485,7486,7557,2610,15,2,1048,0,0,2,Trond Flaarønning,Døden i Venedig
+147,28,66,1547,6026,6032,2700,15,21,1048,3,4,7,Trond Flaarønning,Døden i Venedig
+148,29,80,1627,2211,2268,2371,5,14,1050,1,0,2,Trond Flaarønning,Døden i Venedig
+149,30,52,1679,9367,9429,2415,20,2,1053,1,0,4,Trond Flaarønning,Døden i Venedig
+150,1,64,64,19408,19684,19408,45,0,1000,0,0,2,Yngve Sikko,De normale gutta
+151,2,30,94,42791,42874,30724,90,8,1002,1,0,5,Yngve Sikko,De normale gutta
+152,3,79,173,14517,14590,22945,30,1,1002,1,0,9,Yngve Sikko,De normale gutta
+153,4,60,229,3697,3713,16281,10,4,1004,2,4,2,Yngve Sikko,De normale gutta
+154,5,29,258,40803,40906,22966,90,4,1007,0,0,0,Yngve Sikko,De normale gutta
+155,6,28,286,37678,37739,26737,80,28,1010,2,0,2,Yngve Sikko,De normale gutta
+156,7,60,346,14471,14564,22964,30,1,1009,0,0,5,Yngve Sikko,De normale gutta
+157,8,44,390,38011,38030,27038,80,0,1015,1,0,8,Yngve Sikko,De normale gutta
+158,9,50,436,9913,9948,24430,20,18,1019,2,4,8,Yngve Sikko,De normale gutta
+159,10,110,546,380,382,11658,1,22,1021,1,0,19,Yngve Sikko,De normale gutta
+160,11,41,587,23401,23471,11895,50,0,1024,1,0,1,Yngve Sikko,De normale gutta
+161,12,63,646,7522,7557,9806,15,10,1029,2,4,2,Yngve Sikko,De normale gutta
+162,13,68,714,3716,3733,6648,10,10,1034,1,0,4,Yngve Sikko,De normale gutta
+163,14,42,756,11616,11670,5792,25,46,1036,1,0,17,Yngve Sikko,De normale gutta
+164,15,50,806,9867,9920,5123,20,46,1037,0,0,12,Yngve Sikko,De normale gutta
+165,16,36,834,11891,11906,5879,25,69,1037,3,8,0,Yngve Sikko,De normale gutta
+166,17,24,858,45119,45126,8797,90,96,1039,1,0,2,Yngve Sikko,De normale gutta
+167,18,53,911,3333,3394,7308,10,96,1041,0,0,7,Yngve Sikko,De normale gutta
+168,19,38,941,28954,28956,9415,60,62,1034,4,8,0,Yngve Sikko,De normale gutta
+169,20,51,992,26039,26067,10662,55,74,1034,1,0,0,Yngve Sikko,De normale gutta
+170,21,57,1049,2033,2067,8678,5,15,1038,1,0,7,Yngve Sikko,De normale gutta
+171,22,95,1144,3624,3650,6157,10,18,1030,0,0,4,Yngve Sikko,De normale gutta
+172,23,49,1193,14005,14046,6161,30,1,1034,1,0,3,Yngve Sikko,De normale gutta
+173,24,90,1283,2408,2444,5150,5,1,1037,0,0,2,Yngve Sikko,De normale gutta
+174,25,38,1321,26712,26764,5231,55,1,1042,2,0,4,Yngve Sikko,De normale gutta
+175,26,57,1378,10542,10576,4908,25,10,1043,1,0,14,Yngve Sikko,De normale gutta
+176,27,82,1456,1455,1470,3904,5,27,1046,2,4,3,Yngve Sikko,De normale gutta
+177,28,72,1528,2536,2565,3531,5,27,1052,0,0,4,Yngve Sikko,De normale gutta
+178,29,78,1606,2972,2979,3138,10,10,1048,2,0,13,Yngve Sikko,De normale gutta
+179,30,62,1664,3001,3022,2968,10,13,1051,2,4,11,Yngve Sikko,De normale gutta
+180,1,62,62,22243,22579,22243,50,0,1000,0,0,17,Stian Monsø,Skatval psykiatriske
+181,2,33,95,37567,37684,29796,80,10,1003,1,0,27,Stian Monsø,Skatval psykiatriske
+182,3,82,177,11236,11305,19920,25,9,1006,1,0,17,Stian Monsø,Skatval psykiatriske
+183,4,37,214,39458,39581,25846,80,2,1010,0,0,8,Stian Monsø,Skatval psykiatriske
+184,5,46,260,13880,13943,21644,30,11,1015,1,0,3,Stian Monsø,Skatval psykiatriske
+185,6,35,295,24055,24141,21585,50,25,1021,1,0,1,Stian Monsø,Skatval psykiatriske
+186,7,59,354,16415,16473,18925,35,56,1022,1,0,2,Stian Monsø,Skatval psykiatriske
+187,8,59,413,17082,17135,17087,35,12,1025,1,0,1,Stian Monsø,Skatval psykiatriske
+188,9,23,436,48296,48316,24361,100,5,1027,1,0,6,Stian Monsø,Skatval psykiatriske
+189,10,73,509,21525,21609,23311,45,5,1025,0,0,23,Stian Monsø,Skatval psykiatriske
+190,11,55,564,2782,2813,18693,10,11,1022,1,0,7,Stian Monsø,Skatval psykiatriske
+191,12,26,590,48157,48163,25219,95,9,1019,1,0,0,Stian Monsø,Skatval psykiatriske
+192,13,45,635,28519,28667,25877,60,9,1014,0,0,1,Stian Monsø,Skatval psykiatriske
+193,14,28,663,40890,40920,27568,90,26,1015,2,0,12,Stian Monsø,Skatval psykiatriske
+194,15,32,695,30512,30518,28038,60,19,1017,1,0,2,Stian Monsø,Skatval psykiatriske
+195,16,51,746,1446,1469,22409,5,7,1014,0,0,4,Stian Monsø,Skatval psykiatriske
+196,17,63,809,1224,1236,17540,5,13,1019,1,0,8,Stian Monsø,Skatval psykiatriske
+197,18,55,864,2547,2584,14418,5,6,1024,1,0,15,Stian Monsø,Skatval psykiatriske
+198,19,53,917,13181,13187,12872,30,5,1029,1,0,2,Stian Monsø,Skatval psykiatriske
+199,20,62,975,15654,15670,12994,35,6,1027,2,4,8,Stian Monsø,Skatval psykiatriske
+200,21,54,1029,3298,3333,11048,10,21,1032,1,0,1,Stian Monsø,Skatval psykiatriske
+201,22,60,1089,21249,21260,11415,45,25,1032,1,0,14,Stian Monsø,Skatval psykiatriske
+202,23,50,1139,12805,12855,10940,25,13,1032,1,0,3,Stian Monsø,Skatval psykiatriske
+203,24,68,1207,14549,14578,11081,30,13,1032,1,0,8,Stian Monsø,Skatval psykiatriske
+204,25,35,1242,33507,33582,11622,70,9,1036,1,0,18,Stian Monsø,Skatval psykiatriske
+205,26,45,1287,27942,28126,12119,55,9,1037,0,0,27,Stian Monsø,Skatval psykiatriske
+206,27,55,1342,19418,19444,12008,40,40,1040,2,0,12,Stian Monsø,Skatval psykiatriske
+207,28,65,1407,6341,6401,11141,15,24,1042,1,0,15,Stian Monsø,Skatval psykiatriske
+208,29,64,1471,9865,9897,10783,20,3,1047,1,0,0,Stian Monsø,Skatval psykiatriske
+209,30,67,1538,1410,1423,9558,5,1,1048,1,0,14,Stian Monsø,Skatval psykiatriske
+210,1,73,73,8085,8246,8085,20,0,1000,0,0,1,Magnus Strand,HEIMBAKAKAK (110%)
+211,2,28,101,45206,45254,23610,95,10,1003,1,0,2,Magnus Strand,HEIMBAKAKAK (110%)
+212,3,79,180,13924,13982,17495,30,10,1005,0,0,7,Magnus Strand,HEIMBAKAKAK (110%)
+213,4,50,230,15437,15587,15292,35,10,1005,0,0,0,Magnus Strand,HEIMBAKAKAK (110%)
+214,5,48,278,11309,11341,11332,25,31,1007,2,0,3,Magnus Strand,HEIMBAKAKAK (110%)
+215,6,26,304,39837,39958,16504,80,31,1011,0,0,0,Magnus Strand,HEIMBAKAKAK (110%)
+216,7,63,367,11194,11277,12615,25,31,1009,0,0,0,Magnus Strand,HEIMBAKAKAK (110%)
+217,8,56,423,21202,21235,13054,45,63,1011,2,0,0,Magnus Strand,HEIMBAKAKAK (110%)
+218,9,35,458,32158,32326,15441,65,63,1010,0,0,6,Magnus Strand,HEIMBAKAKAK (110%)
+219,10,83,541,12122,12186,12935,25,7,1004,0,0,6,Magnus Strand,HEIMBAKAKAK (110%)
+220,11,53,594,3722,3799,9982,10,7,1005,0,0,3,Magnus Strand,HEIMBAKAKAK (110%)
+221,12,42,636,32237,32267,12139,65,1,1007,1,0,0,Magnus Strand,HEIMBAKAKAK (110%)
+222,13,54,690,15683,15795,11523,35,1,1012,0,0,0,Magnus Strand,HEIMBAKAKAK (110%)
+223,14,29,719,37104,37314,13232,75,1,1015,0,0,0,Magnus Strand,HEIMBAKAKAK (110%)
+224,15,36,755,23865,23974,14113,50,1,1014,0,0,0,Magnus Strand,HEIMBAKAKAK (110%)
+225,16,27,782,24200,24379,14595,50,1,1016,0,0,0,Magnus Strand,HEIMBAKAKAK (110%)
+226,17,29,811,39230,39341,17061,80,1,1019,0,0,0,Magnus Strand,HEIMBAKAKAK (110%)
+227,18,32,843,28639,28775,18143,60,1,1022,0,0,0,Magnus Strand,HEIMBAKAKAK (110%)
+228,19,67,910,4503,4540,13872,10,1,1026,0,0,0,Magnus Strand,HEIMBAKAKAK (110%)
+229,20,52,946,25191,25192,17217,50,0,1024,6,16,8,Magnus Strand,HEIMBAKAKAK (110%)
+230,21,45,991,9549,9650,15974,20,0,1026,0,0,1,Magnus Strand,HEIMBAKAKAK (110%)
+231,22,44,1035,40054,40067,18001,80,14,1025,2,0,20,Magnus Strand,HEIMBAKAKAK (110%)
+232,23,49,1084,13136,13296,17124,30,14,1024,0,0,2,Magnus Strand,HEIMBAKAKAK (110%)
+233,24,74,1158,10212,10282,15736,20,14,1023,0,0,4,Magnus Strand,HEIMBAKAKAK (110%)
+234,25,49,1207,4488,4586,14915,10,14,1025,0,0,29,Magnus Strand,HEIMBAKAKAK (110%)
+235,26,32,1239,45610,45684,16701,90,14,1027,0,0,21,Magnus Strand,HEIMBAKAKAK (110%)
+236,27,33,1272,42869,42995,18678,90,14,1031,0,0,14,Magnus Strand,HEIMBAKAKAK (110%)
+237,28,59,1331,10178,10260,17541,20,14,1029,0,0,7,Magnus Strand,HEIMBAKAKAK (110%)
+238,29,54,1385,16652,16739,17246,35,14,1031,0,0,1,Magnus Strand,HEIMBAKAKAK (110%)
+239,30,67,1452,1306,1319,15398,5,14,1032,0,0,10,Magnus Strand,HEIMBAKAKAK (110%)
