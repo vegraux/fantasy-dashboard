@@ -6,7 +6,7 @@ authors = ["Vegard Solberg <vegardsolberg@hotmail.com>"]
 readme = "README.md" # Optional if you have a readme file.
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.11"
 gunicorn = "*"
 pydantic = ">2"
 uvicorn = "*"
