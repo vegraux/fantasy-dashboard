@@ -10,7 +10,7 @@ from dash.dependencies import Input, Output
 from flask import Flask
 
 
-def create_app() -> Flask:
+def create_app(debug) -> Flask:
 
     app = dash.Dash(__name__, external_stylesheets=[dbc.themes.JOURNAL])
     data = pd.read_csv(pathlib.Path(__file__).parent / "data.csv", index_col=0)
@@ -95,14 +95,15 @@ def create_app() -> Flask:
 
 
     def get_moment_figure(variable: str, round_start: int = 1, round_end: int = 30) -> go.Figure:
-        momentum = data.groupby(["player_name", "event"])[variable].sum().rolling(4).mean().dropna().reset_index()
+        momentum = data.sort_values(by=["player_name", "event"])
+        momentum[variable] = momentum.groupby("player_name")[variable].rolling(4, min_periods=1).mean().values
         plot_data = momentum[(momentum["event"] >= round_start) & (momentum["event"] <= round_end)]
         fig = px.line(
             plot_data,
             x="event",
             y=variable,
             color="player_name",
-            title=f"Gjennomsnittlig verdi for {reverse_var_map[variable]} de siste 4 kamper",
+            title=f"Momentum: Gjennomsnittlig verdi for {reverse_var_map[variable]} de siste 4 kamper",
         )
         return fig
 
@@ -147,10 +148,11 @@ def create_app() -> Flask:
         round_range: list[int] | tuple = (0, 30),
     ) -> go.Figure:
         return get_moment_figure(variable, round_range[0], round_range[1])
+    if debug:
+        app.run_server(port=8051)
 
     return app.server
 
 
 if __name__ == "__main__":
-    app = create_app()
-    app.run_server(port=8051)
+    app = create_app(debug=True)
