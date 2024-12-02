@@ -10,7 +10,7 @@ from dash.dependencies import Input, Output
 from flask import Flask
 
 
-def create_app(debug) -> Flask:
+def create_app(debug: bool = False) -> Flask:
     app = dash.Dash(__name__, external_stylesheets=[dbc.themes.JOURNAL])
     data = pd.read_csv(pathlib.Path(__file__).parent / "data.csv", index_col=0)
 
