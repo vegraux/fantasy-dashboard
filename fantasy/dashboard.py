@@ -11,7 +11,6 @@ from flask import Flask
 
 
 def create_app(debug) -> Flask:
-
     app = dash.Dash(__name__, external_stylesheets=[dbc.themes.JOURNAL])
     data = pd.read_csv(pathlib.Path(__file__).parent / "data.csv", index_col=0)
 
@@ -39,7 +38,7 @@ def create_app(debug) -> Flask:
                     dbc.CardBody(
                         [
                             html.H5("Velg runder å se data for", className="card-title"),
-                            dcc.RangeSlider(0, 30, 1, value=[0, 30], id="my-range-slider"),
+                            dcc.RangeSlider(1, 30, 1, value=[1, 30], id="my-range-slider"),
                         ]
                     )
                 )
@@ -66,12 +65,12 @@ def create_app(debug) -> Flask:
             html.Br(),
             dcc.Graph(id="sum-fig"),
             dcc.Graph(id="variable-fig"),
+            dcc.Graph(id="cumulative-fig"),
             dcc.Graph(id="moment-fig"),
         ]
     )
 
     app.layout = dbc.Container(layout)
-
 
     def get_figure(variable: str, round_start: int = 1, round_end: int = 30) -> go.Figure:
         plot_data = data[(data["event"] >= round_start) & (data["event"] <= round_end)]
@@ -80,10 +79,9 @@ def create_app(debug) -> Flask:
             x="event",
             y=variable,
             color="player_name",
-            title=f"{reverse_var_map[variable]} fra {round_start} til {round_end}",
+            title=f"{reverse_var_map[variable]} fra runde {round_start} til runde {round_end}",
         )
         return fig
-
 
     def get_sum_figure(variable: str, round_start: int = 1, round_end: int = 30) -> go.Figure:
         plot_data = data[(data["event"] >= round_start) & (data["event"] <= round_end)]
@@ -92,7 +90,6 @@ def create_app(debug) -> Flask:
         fig.add_trace(go.Bar(x=summed_data.index, y=summed_data))
         fig.update_layout(title=f"Sum av {reverse_var_map[variable]} fra runde {round_start} til runde {round_end}")
         return fig
-
 
     def get_moment_figure(variable: str, round_start: int = 1, round_end: int = 30) -> go.Figure:
         momentum = data.sort_values(by=["player_name", "event"])
@@ -103,10 +100,22 @@ def create_app(debug) -> Flask:
             x="event",
             y=variable,
             color="player_name",
-            title=f"Momentum: Gjennomsnittlig verdi for {reverse_var_map[variable]} de siste 4 kamper",
+            title=f"Momentum: Gjennomsnittlig verdi for {reverse_var_map[variable]} de siste 4 rundene",
         )
         return fig
 
+    def get_cumulative_sum_figure(variable: str, round_start: int = 1, round_end: int = 30) -> go.Figure:
+        cumulative = data.sort_values(by=["player_name", "event"])
+        cumulative[variable] = cumulative.groupby("player_name")[variable].cumsum()
+        plot_data = cumulative[(cumulative["event"] >= round_start) & (cumulative["event"] <= round_end)]
+        fig = px.line(
+            plot_data,
+            x="event",
+            y=variable,
+            color="player_name",
+            title=f"Samlet sum så langt i sesongen for {reverse_var_map[variable]}",
+        )
+        return fig
 
     @app.callback(
         Output("variable-fig", "figure"),
@@ -117,10 +126,9 @@ def create_app(debug) -> Flask:
     )
     def update_round_figure(
         variable: str = "points",
-        round_range: list[int] | tuple = (0, 30),
+        round_range: list[int] | tuple = (1, 30),
     ) -> go.Figure:
         return get_figure(variable, round_range[0], round_range[1])
-
 
     @app.callback(
         Output("sum-fig", "figure"),
@@ -131,10 +139,22 @@ def create_app(debug) -> Flask:
     )
     def update_sum_figure(
         variable: str = "points",
-        round_range: list[int] | tuple = (0, 30),
+        round_range: list[int] | tuple = (1, 30),
     ) -> go.Figure:
         return get_sum_figure(variable, round_range[0], round_range[1])
 
+    @app.callback(
+        Output("cumulative-fig", "figure"),
+        [
+            Input("variable-dropdown", "value"),
+            Input("my-range-slider", "value"),
+        ],
+    )
+    def update_moment_figure(
+        variable: str = "points",
+        round_range: list[int] | tuple = (1, 30),
+    ) -> go.Figure:
+        return get_cumulative_sum_figure(variable, round_range[0], round_range[1])
 
     @app.callback(
         Output("moment-fig", "figure"),
@@ -145,9 +165,10 @@ def create_app(debug) -> Flask:
     )
     def update_moment_figure(
         variable: str = "points",
-        round_range: list[int] | tuple = (0, 30),
+        round_range: list[int] | tuple = (1, 30),
     ) -> go.Figure:
         return get_moment_figure(variable, round_range[0], round_range[1])
+
     if debug:
         app.run_server(port=8051)
 
