@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objs as go
 
-from fantasy.utils import REVERSE_VAR_MAP
+from fantasy.utils import REVERSE_PLAYER_VARIABLES, REVERSE_VAR_MAP
 
 
 def get_sum_figure(data: pd.DataFrame, variable: str, round_start: int = 1, round_end: int = 30) -> go.Figure:
@@ -53,4 +53,31 @@ def get_figure(data: pd.DataFrame, variable: str, round_start: int = 1, round_en
         color="player_name",
         title=f"{REVERSE_VAR_MAP[variable]} fra runde {round_start} til runde {round_end}",
     )
+    return fig
+
+
+def get_variable_by_player_per_manager(
+    data: pd.DataFrame, variable: str, round_start: int = 1, round_end: int = 30, only_active_players: bool = True
+) -> go.Figure:
+    data = data.copy()
+
+    data = data.query(f"event_id >= {round_start} and event_id <= {round_end}")
+
+    if only_active_players:
+        data = data.query("multiplier > 0")
+
+    if variable in ["total_points", "bonus"]:
+        data[variable] = data[variable] * data["multiplier"]
+
+    points_per_player = data.groupby(["player_name", "web_name"])[variable].sum().reset_index()
+    points_per_player = points_per_player.sort_values(by=["player_name", variable], ascending=False)
+    fig = px.bar(
+        points_per_player,
+        x="player_name",
+        y=variable,
+        color="web_name",
+        title=f"{REVERSE_PLAYER_VARIABLES[variable]} fra runde {round_start} til runde {round_end}",
+    )
+    fig.update_layout(height=800)
+
     return fig

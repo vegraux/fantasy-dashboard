@@ -1,20 +1,24 @@
-import pathlib
-
 import dash
 import dash_bootstrap_components as dbc
-import pandas as pd
 import plotly.graph_objs as go
 from dash import dcc, html
 from dash.dependencies import Input, Output
 from flask import Flask
 
-from fantasy.plots import get_cumulative_sum_figure, get_figure, get_moment_figure, get_sum_figure
-from fantasy.utils import VAR_MAP
+from fantasy.data import DataReader
+from fantasy.plots import (
+    get_cumulative_sum_figure,
+    get_figure,
+    get_moment_figure,
+    get_sum_figure,
+    get_variable_by_player_per_manager,
+)
+from fantasy.utils import PLAYER_VARIABLES, VAR_MAP
 
 
 def create_app(debug: bool = False) -> Flask:
     app = dash.Dash(__name__, external_stylesheets=[dbc.themes.JOURNAL])
-    data = pd.read_csv(pathlib.Path(__file__).parent / "data.csv", index_col=0)
+    data = DataReader()
 
     layout = html.Div(
         [
@@ -55,6 +59,26 @@ def create_app(debug: bool = False) -> Flask:
             dcc.Graph(id="variable-fig"),
             dcc.Graph(id="cumulative-fig"),
             dcc.Graph(id="moment-fig"),
+            dbc.Row(
+                [
+                    dbc.Col(
+                        dbc.Card(
+                            dbc.CardBody(
+                                [
+                                    html.H5("Velg spillervariabel", className="card-title"),
+                                    dcc.Dropdown(
+                                        id="player-variable-dropdown",
+                                        options=[{"label": p, "value": v} for p, v in PLAYER_VARIABLES.items()],
+                                        placeholder="Velg data",
+                                        value="total_points",
+                                    ),
+                                ]
+                            ),
+                        )
+                    ),
+                ]
+            ),
+            dcc.Graph(id="var-per-player-fig"),
         ]
     )
 
@@ -71,7 +95,7 @@ def create_app(debug: bool = False) -> Flask:
         variable: str = "points",
         round_range: list[int] | tuple = (1, 30),
     ) -> go.Figure:
-        return get_figure(data, variable, round_range[0], round_range[1])
+        return get_figure(data.manager_event_stats, variable, round_range[0], round_range[1])
 
     @app.callback(
         Output("sum-fig", "figure"),
@@ -84,7 +108,7 @@ def create_app(debug: bool = False) -> Flask:
         variable: str = "points",
         round_range: list[int] | tuple = (1, 30),
     ) -> go.Figure:
-        return get_sum_figure(data, variable, round_range[0], round_range[1])
+        return get_sum_figure(data.manager_event_stats, variable, round_range[0], round_range[1])
 
     @app.callback(
         Output("cumulative-fig", "figure"),
@@ -97,7 +121,7 @@ def create_app(debug: bool = False) -> Flask:
         variable: str = "points",
         round_range: list[int] | tuple = (1, 30),
     ) -> go.Figure:
-        return get_cumulative_sum_figure(data, variable, round_range[0], round_range[1])
+        return get_cumulative_sum_figure(data.manager_event_stats, variable, round_range[0], round_range[1])
 
     @app.callback(
         Output("moment-fig", "figure"),
@@ -110,7 +134,20 @@ def create_app(debug: bool = False) -> Flask:
         variable: str = "points",
         round_range: list[int] | tuple = (1, 30),
     ) -> go.Figure:
-        return get_moment_figure(data, variable, round_range[0], round_range[1])
+        return get_moment_figure(data.manager_event_stats, variable, round_range[0], round_range[1])
+
+    @app.callback(
+        Output("var-per-player-fig", "figure"),
+        [
+            Input("player-variable-dropdown", "value"),
+            Input("my-range-slider", "value"),
+        ],
+    )
+    def update_var_per_player_figure(
+        variable: str = "total_points",
+        round_range: list[int] | tuple = (1, 30),
+    ) -> go.Figure:
+        return get_variable_by_player_per_manager(data.data_per_player, variable, round_range[0], round_range[1])
 
     if debug:
         app.run_server(port=8051)
@@ -119,4 +156,4 @@ def create_app(debug: bool = False) -> Flask:
 
 
 if __name__ == "__main__":
-    app = create_app(debug=True)
+    create_app(debug=True)
