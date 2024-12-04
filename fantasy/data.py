@@ -4,6 +4,8 @@ import pandas as pd
 
 from fantasy.utils import PLAYER_VARIABLES
 
+POSITION_MAP = {1: "Keeper", 2: "Forsvar", 3: "Midtbane", 4: "Angrep"}
+
 
 class DataReader:
     def __init__(self) -> None:
@@ -27,5 +29,12 @@ class DataReader:
                 player_event, left_on=["element", "event_id"], right_on=["element", "round"], how="left", validate="m:1"
             )
             .merge(self.manager_info, left_on="manager_id", right_on="entry", how="left")
-            .merge(self.player_info[["id", "web_name"]], left_on="element", right_on="id", how="left")
+            .merge(
+                self.player_info.assign(field_position=self.player_info["element_type"].map(POSITION_MAP))[
+                    ["id", "web_name", "field_position"]
+                ],
+                left_on="element",
+                right_on="id",
+                how="left",
+            )
         )
