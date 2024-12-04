@@ -13,7 +13,7 @@ from fantasy.plots import (
     get_sum_figure,
     get_variable_by_player_per_manager,
 )
-from fantasy.utils import PLAYER_VARIABLES, VAR_MAP
+from fantasy.utils import GROUPBY_VARIABLE, PLAYER_VARIABLES, VAR_MAP
 
 
 def create_app(debug: bool = False) -> Flask:
@@ -37,21 +37,19 @@ def create_app(debug: bool = False) -> Flask:
             ),
             dbc.Row(
                 [
-                    dbc.Col(
-                        dbc.Card(
-                            dbc.CardBody(
-                                [
-                                    html.H5("Velg variabel", className="card-title"),
-                                    dcc.Dropdown(
-                                        id="variable-dropdown",
-                                        options=[{"label": pretty, "value": var} for pretty, var in VAR_MAP.items()],
-                                        placeholder="Chose variable",
-                                        value="points",
-                                    ),
-                                ]
-                            ),
-                        )
-                    ),
+                    dbc.Card(
+                        dbc.CardBody(
+                            [
+                                html.H5("Velg variabel", className="card-title"),
+                                dcc.Dropdown(
+                                    id="variable-dropdown",
+                                    options=[{"label": pretty, "value": var} for pretty, var in VAR_MAP.items()],
+                                    placeholder="Chose variable",
+                                    value="points",
+                                ),
+                            ]
+                        ),
+                    )
                 ]
             ),
             html.Br(),
@@ -65,12 +63,30 @@ def create_app(debug: bool = False) -> Flask:
                         dbc.Card(
                             dbc.CardBody(
                                 [
-                                    html.H5("Velg spillervariabel", className="card-title"),
-                                    dcc.Dropdown(
-                                        id="player-variable-dropdown",
-                                        options=[{"label": p, "value": v} for p, v in PLAYER_VARIABLES.items()],
-                                        placeholder="Velg data",
-                                        value="total_points",
+                                    html.H5("Velg variabel", className="card-title"),
+                                    dbc.Row(
+                                        [
+                                            dbc.Col(
+                                                dcc.Dropdown(
+                                                    id="player-variable-dropdown",
+                                                    options=[
+                                                        {"label": p, "value": v} for p, v in PLAYER_VARIABLES.items()
+                                                    ],
+                                                    placeholder="Velg data",
+                                                    value="total_points",
+                                                )
+                                            ),
+                                            dbc.Col(
+                                                dcc.Dropdown(
+                                                    id="groupby-variable-dropdown",
+                                                    options=[
+                                                        {"label": p, "value": v} for p, v in GROUPBY_VARIABLE.items()
+                                                    ],
+                                                    placeholder="Grupper data etter",
+                                                    value="web_name",
+                                                )
+                                            ),
+                                        ]
                                     ),
                                 ]
                             ),
@@ -139,15 +155,19 @@ def create_app(debug: bool = False) -> Flask:
     @app.callback(
         Output("var-per-player-fig", "figure"),
         [
+            Input("groupby-variable-dropdown", "value"),
             Input("player-variable-dropdown", "value"),
             Input("my-range-slider", "value"),
         ],
     )
     def update_var_per_player_figure(
+        groupby_variable: str = "web_name",
         variable: str = "total_points",
         round_range: list[int] | tuple = (1, 30),
     ) -> go.Figure:
-        return get_variable_by_player_per_manager(data.data_per_player, variable, round_range[0], round_range[1])
+        return get_variable_by_player_per_manager(
+            data.data_per_player, variable, round_range[0], round_range[1], group_var=groupby_variable
+        )
 
     if debug:
         app.run_server(port=8051)

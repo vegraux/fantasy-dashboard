@@ -27,5 +27,7 @@ PLAYER_VARIABLES = {
     "Redninger": "saves",
 }
 
-
 REVERSE_PLAYER_VARIABLES = {v: k for k, v in PLAYER_VARIABLES.items()}
+
+GROUPBY_VARIABLE = {"Spiller": "web_name", "Posisjon på banen": "field_position"}
+REVERSE_GROUPBY_VARIABLE = {v: k for k, v in GROUPBY_VARIABLE.items()}

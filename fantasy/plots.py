@@ -62,7 +62,7 @@ def get_variable_by_player_per_manager(
     round_start: int = 1,
     round_end: int = 30,
     only_active_players: bool = True,
-    contribution: str = "field_position",  # web_name
+    group_var: str = "field_position",  # web_name
 ) -> go.Figure:
     data = data.copy()
 
@@ -74,9 +74,9 @@ def get_variable_by_player_per_manager(
     if variable in ["total_points", "bonus"]:
         data[variable] = data[variable] * data["multiplier"]
 
-    points_per_player = data.groupby(["player_name", contribution])[variable].sum().reset_index()
-    zeros = [player for player, b in (points_per_player.groupby(contribution)[variable].sum() == 0).items() if b]
-    points_per_player = points_per_player[~points_per_player[contribution].isin(zeros)]
+    points_per_player = data.groupby(["player_name", group_var])[variable].sum().reset_index()
+    zeros = [player for player, b in (points_per_player.groupby(group_var)[variable].sum() == 0).items() if b]
+    points_per_player = points_per_player[~points_per_player[group_var].isin(zeros)]
 
     manager_ordering = points_per_player.groupby("player_name")[variable].sum().sort_values(ascending=False).index
 
@@ -85,7 +85,7 @@ def get_variable_by_player_per_manager(
         points_per_player,
         x="player_name",
         y=variable,
-        color=contribution,
+        color=group_var,
         title=f"{REVERSE_PLAYER_VARIABLES[variable]} fra runde {round_start} til runde {round_end}",
         category_orders={"player_name": manager_ordering},
     )
