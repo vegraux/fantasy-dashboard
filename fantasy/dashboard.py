@@ -37,33 +37,16 @@ def create_app(debug: bool = False) -> Flask:
             ),
             dbc.Row(
                 [
-                    dbc.Card(
-                        dbc.CardBody(
-                            [
-                                html.H5("Velg variabel", className="card-title"),
-                                dcc.Dropdown(
-                                    id="variable-dropdown",
-                                    options=[{"label": pretty, "value": var} for pretty, var in VAR_MAP.items()],
-                                    placeholder="Chose variable",
-                                    value="points",
-                                ),
-                            ]
-                        ),
-                    )
-                ]
-            ),
-            html.Br(),
-            dcc.Graph(id="sum-fig"),
-            dcc.Graph(id="variable-fig"),
-            dcc.Graph(id="cumulative-fig"),
-            dcc.Graph(id="moment-fig"),
-            dbc.Row(
-                [
                     dbc.Col(
                         dbc.Card(
                             dbc.CardBody(
                                 [
-                                    html.H5("Velg variabel", className="card-title"),
+                                    dbc.Row(
+                                        [
+                                            dbc.Col(html.H5("Velg variabel", className="card-title")),
+                                            dbc.Col(html.H5("Grupper data på", className="card-title")),
+                                        ]
+                                    ),
                                     dbc.Row(
                                         [
                                             dbc.Col(
@@ -72,7 +55,6 @@ def create_app(debug: bool = False) -> Flask:
                                                     options=[
                                                         {"label": p, "value": v} for p, v in PLAYER_VARIABLES.items()
                                                     ],
-                                                    placeholder="Velg data",
                                                     value="total_points",
                                                 )
                                             ),
@@ -82,7 +64,6 @@ def create_app(debug: bool = False) -> Flask:
                                                     options=[
                                                         {"label": p, "value": v} for p, v in GROUPBY_VARIABLE.items()
                                                     ],
-                                                    placeholder="Grupper data etter",
                                                     value="web_name",
                                                 )
                                             ),
@@ -95,6 +76,27 @@ def create_app(debug: bool = False) -> Flask:
                 ]
             ),
             dcc.Graph(id="var-per-player-fig"),
+            dbc.Row(
+                [
+                    dbc.Card(
+                        dbc.CardBody(
+                            [
+                                html.H5("Velg manager-variabel", className="card-title"),
+                                dcc.Dropdown(
+                                    id="variable-dropdown",
+                                    options=[{"label": pretty, "value": var} for pretty, var in VAR_MAP.items()],
+                                    value="points",
+                                ),
+                            ]
+                        ),
+                    )
+                ]
+            ),
+            html.Br(),
+            dcc.Graph(id="sum-fig"),
+            dcc.Graph(id="variable-fig"),
+            dcc.Graph(id="cumulative-fig"),
+            dcc.Graph(id="moment-fig"),
         ]
     )
 
