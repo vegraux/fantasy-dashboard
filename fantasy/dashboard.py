@@ -29,7 +29,7 @@ def create_app(debug: bool = False) -> Flask:
                 dbc.Card(
                     dbc.CardBody(
                         [
-                            html.H5("Velg runder å se data for", className="card-title"),
+                            html.H6("Velg runder å se data for", className="card-title"),
                             dcc.RangeSlider(1, 30, 1, value=[1, 30], id="my-range-slider"),
                         ]
                     )
@@ -43,8 +43,8 @@ def create_app(debug: bool = False) -> Flask:
                                 [
                                     dbc.Row(
                                         [
-                                            dbc.Col(html.H5("Velg variabel", className="card-title")),
-                                            dbc.Col(html.H5("Grupper data på", className="card-title")),
+                                            dbc.Col(html.H6("Velg variabel:", className="card-title")),
+                                            dbc.Col(html.H6("Grupper data etter:", className="card-title")),
                                         ]
                                     ),
                                     dbc.Row(
@@ -81,7 +81,7 @@ def create_app(debug: bool = False) -> Flask:
                     dbc.Card(
                         dbc.CardBody(
                             [
-                                html.H5("Velg manager-variabel", className="card-title"),
+                                html.H6("Velg manager-variabel:", className="card-title"),
                                 dcc.Dropdown(
                                     id="variable-dropdown",
                                     options=[{"label": pretty, "value": var} for pretty, var in VAR_MAP.items()],

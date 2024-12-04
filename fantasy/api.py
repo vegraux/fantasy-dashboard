@@ -37,13 +37,13 @@ def fetch_data() -> list[dict]:
     return all_data
 
 
-def get_player_info() -> list[dict]:
+def get_player_and_team_info() -> [list[dict], list[dict]]:
     url = "https://fantasy.eliteserien.no/api/bootstrap-static/"
     with httpx.Client() as client:
         response = client.get(url)
         response.raise_for_status()
         data = response.json()
-    return data["elements"]
+    return data["elements"], data["teams"]
 
 
 def fetch_player_event_stats(player_ids: Iterable[int]) -> list[dict]:
@@ -108,4 +108,7 @@ if __name__ == "__main__":
     # pd.DataFrame(player_info).to_csv("data/player_info.csv")
 
     # manager_info = fetch_league_manager_data(998)
+    # player_info, team_info = get_player_and_team_info()
+    # import pandas as pd
+    # pd.DataFrame(team_info).to_csv("data/team_info.csv")
     pass

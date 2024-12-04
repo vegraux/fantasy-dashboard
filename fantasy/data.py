@@ -14,6 +14,7 @@ class DataReader:
         self.automatic_subs = self.read_csv("automatic_subs.csv")
         self.player_info = self.read_csv("player_info.csv")
         self.manager_info = self.read_csv("manager_info.csv")
+        self.team_info = self.read_csv("team_info.csv")
         self.player_event_stats = self.read_csv("player_event_stats.csv")
         self.manager_event_stats = self.read_csv("manager_event_stats.csv")
         self.data_per_player = self.merge_manager_squad_with_player_stats()
@@ -31,10 +32,11 @@ class DataReader:
             .merge(self.manager_info, left_on="manager_id", right_on="entry", how="left")
             .merge(
                 self.player_info.assign(field_position=self.player_info["element_type"].map(POSITION_MAP))[
-                    ["id", "web_name", "field_position"]
+                    ["id", "web_name", "field_position", "team"]
                 ],
                 left_on="element",
                 right_on="id",
                 how="left",
             )
+            .merge(self.team_info, left_on="team", right_on="id", how="left")
         )
