@@ -37,5 +37,10 @@ PLAYER_VARIABLES = ORIGINAL_PLAYER_VARIABLES | CALC_PLAYER_VARS
 
 REVERSE_PLAYER_VARIABLES = {v: k for k, v in PLAYER_VARIABLES.items()}
 
-GROUPBY_VARIABLE = {"Spiller": "web_name", "Posisjon på banen": "field_position", "Lag": "name"}
+GROUPBY_VARIABLE = {
+    "Spiller": "web_name",
+    "Posisjon på banen": "field_position",
+    "Lag": "name",
+    "Ingen gruppering": None,
+}
 REVERSE_GROUPBY_VARIABLE = {v: k for k, v in GROUPBY_VARIABLE.items()}

@@ -163,7 +163,7 @@ def create_app(debug: bool = False) -> Flask:
         ],
     )
     def update_var_per_player_figure(
-        groupby_variable: str = "web_name",
+        groupby_variable: str | None = "web_name",
         variable: str = "total_points",
         round_range: list[int] | tuple = (1, 30),
     ) -> go.Figure:

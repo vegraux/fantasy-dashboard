@@ -56,13 +56,26 @@ def get_figure(data: pd.DataFrame, variable: str, round_start: int = 1, round_en
     return fig
 
 
+def figure_without_grouping(data: pd.DataFrame, variable: str, round_start: int = 1, round_end: int = 30) -> go.Figure:
+    points_per_player = data.groupby(["player_name"])[variable].sum().sort_values(ascending=False)
+
+    fig = px.bar(
+        points_per_player,
+        x=points_per_player.index,
+        y=variable,
+        title=f"{REVERSE_PLAYER_VARIABLES[variable]} fra runde {round_start} til runde {round_end}",
+    )
+    fig.update_layout(height=800)
+    return fig
+
+
 def get_variable_by_player_per_manager(
     data: pd.DataFrame,
     variable: str,
     round_start: int = 1,
     round_end: int = 30,
     only_active_players: bool = True,
-    group_var: str = "field_position",  # web_name
+    group_var: str | None = "field_position",  # web_name
 ) -> go.Figure:
     data = data.copy()
 
@@ -74,6 +87,9 @@ def get_variable_by_player_per_manager(
     if variable == "points_from_automatic_subs":
         data = data.query("automatic_sub")
         variable = "total_points"
+
+    if not group_var:
+        return figure_without_grouping(data, variable)
 
     points_per_player = data.groupby(["player_name", group_var])[variable].sum().reset_index()
     zeros = [player for player, b in (points_per_player.groupby(group_var)[variable].sum() == 0).items() if b]
