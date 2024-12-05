@@ -12,7 +12,7 @@ VAR_MAP = {
 }
 REVERSE_VAR_MAP = {v: k for k, v in VAR_MAP.items()}
 
-PLAYER_VARIABLES = {
+ORIGINAL_PLAYER_VARIABLES = {
     "Assists": "assists",
     "Mål": "goals_scored",
     "Poeng": "total_points",
@@ -26,6 +26,14 @@ PLAYER_VARIABLES = {
     "Straffebom": "penalties_missed",
     "Redninger": "saves",
 }
+
+CALC_PLAYER_VARS = {
+    "Poeng uten kapteiner": "original_total_points",
+    "Poeng tjent på kapteiner": "total_points_captain_gain",
+    "Poeng fra automatiske bytter": "points_from_automatic_subs",
+}
+
+PLAYER_VARIABLES = ORIGINAL_PLAYER_VARIABLES | CALC_PLAYER_VARS
 
 REVERSE_PLAYER_VARIABLES = {v: k for k, v in PLAYER_VARIABLES.items()}
 

@@ -71,8 +71,9 @@ def get_variable_by_player_per_manager(
     if only_active_players:
         data = data.query("multiplier > 0")
 
-    if variable in ["total_points", "bonus"]:
-        data[variable] = data[variable] * data["multiplier"]
+    if variable == "points_from_automatic_subs":
+        data = data.query("automatic_sub")
+        variable = "total_points"
 
     points_per_player = data.groupby(["player_name", group_var])[variable].sum().reset_index()
     zeros = [player for player, b in (points_per_player.groupby(group_var)[variable].sum() == 0).items() if b]

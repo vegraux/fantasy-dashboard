@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from fantasy.utils import PLAYER_VARIABLES
+from fantasy.utils import ORIGINAL_PLAYER_VARIABLES
 
 POSITION_MAP = {1: "Keeper", 2: "Forsvar", 3: "Midtbane", 4: "Angrep"}
 
@@ -17,13 +17,13 @@ class DataReader:
         self.team_info = self.read_csv("team_info.csv")
         self.player_event_stats = self.read_csv("player_event_stats.csv")
         self.manager_event_stats = self.read_csv("manager_event_stats.csv")
-        self.data_per_player = self.merge_manager_squad_with_player_stats()
+        self.data_per_player = self.get_almighty_dataframe()
 
     def read_csv(self, filename: str) -> pd.DataFrame:
         return pd.read_csv(self.data_dir / filename, index_col=0)
 
     def merge_manager_squad_with_player_stats(self) -> pd.DataFrame:
-        player_cols = list(PLAYER_VARIABLES.values())
+        player_cols = list(ORIGINAL_PLAYER_VARIABLES.values())
         player_event = self.player_event_stats.groupby(["element", "round"])[player_cols].sum().reset_index()
         return (
             self.manager_squad.merge(
@@ -40,3 +40,21 @@ class DataReader:
             )
             .merge(self.team_info, left_on="team", right_on="id", how="left")
         )
+
+    def get_almighty_dataframe(self) -> pd.DataFrame:
+        data = self.merge_manager_squad_with_player_stats()
+        data = data.merge(
+            self.automatic_subs.assign(automatic_sub=True).set_index(["entry", "event", "element_in"])["automatic_sub"],
+            right_on=["entry", "event", "element_in"],
+            left_on=["entry", "event_id", "element"],
+            how="left",
+        )
+        data["automatic_sub"] = data["automatic_sub"].fillna(False)
+
+        # Homemade variables:
+        for v in ["total_points"]:
+            data["original_" + v] = data[v]
+            data[v] = data[v] * data["multiplier"]
+            data[v + "_captain_gain"] = data[v] - data["original_" + v]
+        data.groupby("player_name")["original_total_points"].sum().sort_values(ascending=False)
+        return data
