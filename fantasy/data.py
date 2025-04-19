@@ -5,11 +5,12 @@ import pandas as pd
 from fantasy.utils import ORIGINAL_PLAYER_VARIABLES
 
 POSITION_MAP = {1: "Keeper", 2: "Forsvar", 3: "Midtbane", 4: "Angrep"}
+YEAR = 2025
 
 
 class DataReader:
     def __init__(self) -> None:
-        self.data_dir = Path(__file__).parent / "data"
+        self.data_dir = Path(__file__).parent / "data" / f"{YEAR}"
         self.manager_squad = self.read_csv("manager_squad.csv")
         self.automatic_subs = self.read_csv("automatic_subs.csv")
         self.player_info = self.read_csv("player_info.csv")
@@ -56,5 +57,4 @@ class DataReader:
             data["original_" + v] = data[v]
             data[v] = data[v] * data["multiplier"]
             data[v + "_captain_gain"] = data[v] - data["original_" + v]
-        data.groupby("player_name")["original_total_points"].sum().sort_values(ascending=False)
         return data

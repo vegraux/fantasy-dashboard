@@ -1,7 +1,12 @@
+import time
 from collections.abc import Iterable
 from enum import StrEnum
+from pathlib import Path
 
 import httpx
+import pandas as pd
+
+transport = httpx.HTTPTransport(retries=3)
 
 
 class API(StrEnum):
@@ -28,7 +33,7 @@ def fetch_manager_history(manager_id: int) -> list[dict]:
 
 def fetch_data() -> list[dict]:
     all_data = []
-    manager_datas = fetch_league_manager_data(998)
+    manager_datas = fetch_league_manager_data(1350)
     for manager_data in manager_datas:
         data = fetch_manager_history(manager_data["entry"])
         for entry in data["current"]:
@@ -74,7 +79,7 @@ def fetch_manager_event_player_in_squad(manager_id: int, event_id: int) -> [list
 
 
 def get_player_in_squad() -> [list[dict], list[dict]]:
-    manager_data = fetch_league_manager_data(998)
+    manager_data = fetch_league_manager_data(1350)
     manager_squad, automatic_subs = [], []
     for manager in manager_data:
         for event in range(1, 31):
@@ -88,14 +93,78 @@ def fetch_all_relevant_data() -> None:
     """Fetch relevant data an store to csv."""
 
 
+class FetchData:
+    def __init__(self, league_id: int = 1350, year: int = 2025) -> None:
+        self.league_id = league_id
+        self.data_dir = Path(__file__).parent / "data" / f"{year}"
+        self.managers = fetch_league_manager_data(league_id)
+        self.manager_event_stats = self.fetch_manager_event_stats_data()
+        self.player_info, self.team_info = get_player_and_team_info()
+        self.manager_squad, self.automatic_subs = self.get_player_in_squad()
+        self.player_event_stats = self.fetch_player_event_stats()
+
+    def save_data(self) -> None:
+        """Save data to csv files."""
+        pd.DataFrame(self.managers).to_csv(self.data_dir / "manager_info.csv")
+        pd.DataFrame(self.manager_event_stats).to_csv(self.data_dir / "manager_event_stats.csv")
+        pd.DataFrame(self.player_info).to_csv(self.data_dir / "player_info.csv")
+        pd.DataFrame(self.team_info).to_csv(self.data_dir / "team_info.csv")
+        pd.DataFrame(self.player_event_stats).to_csv(self.data_dir / "plk.km ayer_event_stats.csv")
+        pd.DataFrame(self.manager_squad).to_csv(self.data_dir / "manager_squad.csv")
+        pd.DataFrame(self.automatic_subs).to_csv(self.data_dir / "automatic_subs.csv")
+
+    def fetch_manager_event_stats_data(self) -> list[dict]:
+        all_data = []
+        for manager_data in self.managers:
+            data = fetch_manager_history(manager_data["entry"])
+            for entry in data["current"]:
+                round_data = entry | {k: v for k, v in manager_data.items() if k in ["entry_name", "player_name"]}
+                all_data.append(round_data)
+        return all_data
+
+    def fetch_player_event_stats(self) -> list[dict]:
+        url = "https://fantasy.eliteserien.no/api/element-summary/{player_id}/"
+        player_event_stats = []
+        with httpx.Client(transport=transport) as client:
+            for player_id in self.unique_players:
+                time.sleep(0.5)
+                response = client.get(url.format(player_id=player_id))
+                response.raise_for_status()
+                data = response.json()
+
+                # Find the stats for the given event
+                player_event_stats.extend(data["history"])
+        return player_event_stats
+
+    def get_player_in_squad(self) -> [list[dict], list[dict]]:
+        manager_squad, automatic_subs = [], []
+        for manager in self.managers:
+            for event in range(1, self.played_rounds + 1):
+                player_in_squad, automatic_sub = fetch_manager_event_player_in_squad(manager["entry"], event)
+                manager_squad.extend(player_in_squad)
+                automatic_subs.extend(automatic_sub)
+        return manager_squad, automatic_subs
+
+    @property
+    def unique_players(self) -> set[int]:
+        return {player["element"] for player in self.manager_squad}
+
+    @property
+    def played_rounds(self) -> int:
+        return max(self.manager_event_stats, key=lambda x: x["event"])["event"]
+
+
 if __name__ == "__main__":
+    # fetcher = FetchData()
+    # fetcher.save_data()
+    # import pandas as pd
+
     # data = fetch_data()
     # df = pd.DataFrame(data)
     # df.to_csv("manager_event_stats.csv")
     # manager_squad, automatic_subs = get_player_in_squad()
     # pd.DataFrame(manager_squad).to_csv("manager_squad.csv")
     # pd.DataFrame(automatic_subs).to_csv("automatic_subs.csv")
-    # player_info = get_player_info()
     # player_stats = fetch_manager_event_player_in_squad(1716, 30)
 
     # manager_squad = pd.read_csv("data/manager_squad.csv", index_col=0)
