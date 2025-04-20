@@ -11,6 +11,8 @@ def get_sum_figure(data: pd.DataFrame, variable: str, round_start: int = 1, roun
     fig = go.Figure()
     fig.add_trace(go.Bar(x=summed_data.index, y=summed_data))
     fig.update_layout(title=f"Sum av {REVERSE_VAR_MAP[variable]} fra runde {round_start} til runde {round_end}")
+    fig.update_layout(height=800, yaxis={"title": REVERSE_VAR_MAP[variable]}, xaxis={"title": "Manager"})
+
     return fig
 
 
@@ -25,6 +27,7 @@ def get_moment_figure(data: pd.DataFrame, variable: str, round_start: int = 1, r
         color="player_name",
         title=f"Momentum: Gjennomsnittlig verdi for {REVERSE_VAR_MAP[variable]} de siste 4 rundene",
     )
+    fig.update_layout(height=800, yaxis={"title": REVERSE_VAR_MAP[variable]}, xaxis={"title": "Runde"})
     return fig
 
 
@@ -41,6 +44,7 @@ def get_cumulative_sum_figure(
         color="player_name",
         title=f"Samlet sum så langt i sesongen for {REVERSE_VAR_MAP[variable]}",
     )
+    fig.update_layout(height=800, yaxis={"title": REVERSE_VAR_MAP[variable]}, xaxis={"title": "Runde"})
     return fig
 
 
@@ -53,6 +57,7 @@ def get_figure(data: pd.DataFrame, variable: str, round_start: int = 1, round_en
         color="player_name",
         title=f"{REVERSE_VAR_MAP[variable]} fra runde {round_start} til runde {round_end}",
     )
+    fig.update_layout(height=800, yaxis={"title": REVERSE_VAR_MAP[variable]}, xaxis={"title": "Runde"})
     return fig
 
 
@@ -65,7 +70,7 @@ def figure_without_grouping(data: pd.DataFrame, variable: str, round_start: int 
         y=variable,
         title=f"{REVERSE_PLAYER_VARIABLES[variable]} fra runde {round_start} til runde {round_end}",
     )
-    fig.update_layout(height=800)
+    fig.update_layout(height=800, yaxis={"title": REVERSE_PLAYER_VARIABLES[variable]}, xaxis={"title": "Manager"})
     return fig
 
 
@@ -106,6 +111,6 @@ def get_variable_by_player_per_manager(
         title=f"{REVERSE_PLAYER_VARIABLES[variable]} fra runde {round_start} til runde {round_end}",
         category_orders={"player_name": manager_ordering},
     )
-    fig.update_layout(height=800)
+    fig.update_layout(height=800, yaxis={"title": REVERSE_PLAYER_VARIABLES[variable]}, xaxis={"title": "Manager"})
 
     return fig
