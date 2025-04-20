@@ -1,0 +1,33 @@
+,code,draw,form,id,loss,name,played,points,position,short_name,strength,team_division,unavailable,win
+0,8,0,,1,0,Bodø/Glimt,0,0,0,B/G,,,False,0
+1,1,0,,2,0,Brann,0,0,0,BRA,,,False,0
+2,13,0,,3,0,Bryne,0,0,0,BRY,,,False,0
+3,40,0,,4,0,Fredrikstad,0,0,0,FFK,,,False,0
+4,50,0,,5,0,HamKam,0,0,0,HAM,,,False,0
+5,16,0,,6,0,Haugesund,0,0,0,FKH,,,False,0
+6,1438,0,,7,0,KFUM Oslo,0,0,0,KFUM,,,False,0
+7,2718,0,,8,0,Kristiansund,0,0,0,KBK,,,False,0
+8,6,0,,9,0,Molde,0,0,0,MOL,,,False,0
+9,5,0,,10,0,Rosenborg,0,0,0,RBK,,,False,0
+10,48,0,,11,0,Sandefjord,0,0,0,SAN,,,False,0
+11,5043,0,,12,0,Sarpsborg 08,0,0,0,S08,,,False,0
+12,9,0,,13,0,Strømsgodset,0,0,0,SIF,,,False,0
+13,3,0,,14,0,Tromsø,0,0,0,TIL,,,False,0
+14,7,0,,15,0,Viking,0,0,0,VIK,,,False,0
+15,15,0,,16,0,Vålerenga,0,0,0,VIF,,,False,0
+16,46,0,,17,0,Aalesund,0,0,0,AaFK,,,True,0
+17,1370,0,,18,0,Egersund,0,0,0,EIK,,,True,0
+18,45,0,,19,0,Hødd,0,0,0,HØDD,,,True,0
+19,53,0,,20,0,Kongsvinger,0,0,0,KIL,,,True,0
+20,12,0,,21,0,Lillestrøm,0,0,0,LSK,,,True,0
+21,11,0,,22,0,Lyn,0,0,0,LYN,,,True,0
+22,89,0,,23,0,Mjøndalen,0,0,0,MIF,,,True,0
+23,2,0,,24,0,Moss,0,0,0,MOSS,,,True,0
+24,14,0,,25,0,Odd,0,0,0,ODD,,,True,0
+25,302,0,,26,0,Ranheim,0,0,0,RAN,,,True,0
+26,52,0,,27,0,Raufoss,0,0,0,RAU,,,True,0
+27,38,0,,28,0,Skeid,0,0,0,SKE,,,True,0
+28,10,0,,29,0,Sogndal,0,0,0,SOG,,,True,0
+29,4,0,,30,0,Stabæk,0,0,0,STB,,,True,0
+30,37,0,,31,0,Start,0,0,0,STA,,,True,0
+31,98,0,,32,0,Åsane,0,0,0,ÅSA,,,True,0
