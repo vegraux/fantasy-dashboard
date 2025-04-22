@@ -1,17 +1,25 @@
 ,event,points,total_points,rank,rank_sort,overall_rank,percentile_rank,bank,value,event_transfers,event_transfers_cost,points_on_bench,player_name,entry_name
-0,1,47,47,16535,16752,16535,40,0,1000,0,0,15,Trond Flaarønning,Troilldomsfjellet
-1,2,144,191,447,502,523,1,0,1000,0,0,4,Trond Flaarønning,Troilldomsfjellet
-2,1,43,43,23974,24174,23974,55,0,1000,0,0,4,Vegard Solberg,Kolvereids utvalgte
-3,2,148,191,185,197,523,1,0,1000,0,0,12,Vegard Solberg,Kolvereids utvalgte
-4,1,38,38,32756,32942,32756,70,0,1000,0,0,25,Stian Monsø,Skatval Psykiatriske
-5,2,147,185,268,270,1470,1,0,1000,1,0,13,Stian Monsø,Skatval Psykiatriske
-6,1,45,45,20393,20528,20393,45,0,1000,0,0,6,Magnus Aarli,Rohit Saggi
-7,2,135,180,2225,2253,2295,5,0,1000,0,0,16,Magnus Aarli,Rohit Saggi
-8,1,33,33,39615,39631,39615,90,5,1000,0,0,9,Yngve Sikko,Shinkansen
-9,2,126,159,5201,5204,8802,15,5,1000,1,0,4,Yngve Sikko,Shinkansen
-10,1,47,47,16535,16675,16535,40,0,1000,0,0,4,Haakon Edvardsen,Jon Inge Høilandslag
-11,2,105,152,13171,13180,11580,30,0,1000,0,0,6,Haakon Edvardsen,Jon Inge Høilandslag
-12,1,48,48,14983,15179,14983,35,0,1000,0,0,0,Mikael Leksen,Mikkes masochister
-13,2,104,152,14022,14040,11925,30,0,1000,1,0,1,Mikael Leksen,Mikkes masochister
-14,1,52,52,9536,10217,9536,25,0,1000,0,0,3,Magnus Strand,kanskje neste år
-15,2,94,146,19631,19701,15119,40,25,1000,1,0,10,Magnus Strand,kanskje neste år
+0,1,38,38,32756,32942,32756,70,0,1000,0,0,25,Stian Monsø,Skatval Psykiatriske
+1,2,147,185,268,270,1470,1,0,1000,1,0,13,Stian Monsø,Skatval Psykiatriske
+2,3,73,258,4288,4310,389,10,15,1002,1,0,8,Stian Monsø,Skatval Psykiatriske
+3,1,45,45,20393,20528,20393,45,0,1000,0,0,6,Magnus Aarli,Rohit Saggi
+4,2,135,180,2225,2253,2295,5,0,1000,0,0,16,Magnus Aarli,Rohit Saggi
+5,3,71,251,5602,5616,904,15,19,1002,2,0,6,Magnus Aarli,Rohit Saggi
+6,1,43,43,23974,24174,23974,55,0,1000,0,0,4,Vegard Solberg,Kolvereids utvalgte
+7,2,148,191,185,197,523,1,0,1000,0,0,12,Vegard Solberg,Kolvereids utvalgte
+8,3,54,245,21790,21878,1563,45,0,1002,0,0,3,Vegard Solberg,Kolvereids utvalgte
+9,1,47,47,16535,16752,16535,40,0,1000,0,0,15,Trond Flaarønning,Troilldomsfjellet
+10,2,144,191,447,502,523,1,0,1000,0,0,4,Trond Flaarønning,Troilldomsfjellet
+11,3,45,236,34458,34483,3466,70,0,1002,1,0,15,Trond Flaarønning,Troilldomsfjellet
+12,1,47,47,16535,16675,16535,40,0,1000,0,0,4,Haakon Edvardsen,Jon Inge Høilandslag
+13,2,105,152,13171,13180,11580,30,0,1000,0,0,6,Haakon Edvardsen,Jon Inge Høilandslag
+14,3,67,219,8615,8628,8903,20,19,1001,2,0,10,Haakon Edvardsen,Jon Inge Høilandslag
+15,1,33,33,39615,39631,39615,90,5,1000,0,0,9,Yngve Sikko,Shinkansen
+16,2,126,159,5201,5204,8802,15,5,1000,1,0,4,Yngve Sikko,Shinkansen
+17,3,44,203,34881,34894,15382,70,20,1002,0,0,10,Yngve Sikko,Shinkansen
+18,1,52,52,9536,10217,9536,25,0,1000,0,0,3,Magnus Strand,kanskje neste år
+19,2,94,146,19631,19701,15119,40,25,1000,1,0,10,Magnus Strand,kanskje neste år
+20,3,60,202,15583,15678,16039,35,9,1001,2,4,3,Magnus Strand,kanskje neste år
+21,1,48,48,14983,15179,14983,35,0,1000,0,0,0,Mikael Leksen,Mikkes masochister
+22,2,104,152,14022,14040,11925,30,0,1000,1,0,1,Mikael Leksen,Mikkes masochister
+23,3,30,178,47173,47179,27660,95,20,1002,2,4,3,Mikael Leksen,Mikkes masochister
