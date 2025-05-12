@@ -1,25 +1,49 @@
 ,event,points,total_points,rank,rank_sort,overall_rank,percentile_rank,bank,value,event_transfers,event_transfers_cost,points_on_bench,player_name,entry_name
-0,1,38,38,32756,32942,32756,70,0,1000,0,0,25,Stian Monsø,Skatval Psykiatriske
-1,2,147,185,268,270,1470,1,0,1000,1,0,13,Stian Monsø,Skatval Psykiatriske
-2,3,73,258,4288,4310,389,10,15,1002,1,0,8,Stian Monsø,Skatval Psykiatriske
-3,1,45,45,20393,20528,20393,45,0,1000,0,0,6,Magnus Aarli,Rohit Saggi
-4,2,135,180,2225,2253,2295,5,0,1000,0,0,16,Magnus Aarli,Rohit Saggi
-5,3,71,251,5602,5616,904,15,19,1002,2,0,6,Magnus Aarli,Rohit Saggi
-6,1,43,43,23974,24174,23974,55,0,1000,0,0,4,Vegard Solberg,Kolvereids utvalgte
-7,2,148,191,185,197,523,1,0,1000,0,0,12,Vegard Solberg,Kolvereids utvalgte
-8,3,54,245,21790,21878,1563,45,0,1002,0,0,3,Vegard Solberg,Kolvereids utvalgte
-9,1,47,47,16535,16752,16535,40,0,1000,0,0,15,Trond Flaarønning,Troilldomsfjellet
-10,2,144,191,447,502,523,1,0,1000,0,0,4,Trond Flaarønning,Troilldomsfjellet
-11,3,45,236,34458,34483,3466,70,0,1002,1,0,15,Trond Flaarønning,Troilldomsfjellet
-12,1,47,47,16535,16675,16535,40,0,1000,0,0,4,Haakon Edvardsen,Jon Inge Høilandslag
-13,2,105,152,13171,13180,11580,30,0,1000,0,0,6,Haakon Edvardsen,Jon Inge Høilandslag
-14,3,67,219,8615,8628,8903,20,19,1001,2,0,10,Haakon Edvardsen,Jon Inge Høilandslag
-15,1,33,33,39615,39631,39615,90,5,1000,0,0,9,Yngve Sikko,Shinkansen
-16,2,126,159,5201,5204,8802,15,5,1000,1,0,4,Yngve Sikko,Shinkansen
-17,3,44,203,34881,34894,15382,70,20,1002,0,0,10,Yngve Sikko,Shinkansen
-18,1,52,52,9536,10217,9536,25,0,1000,0,0,3,Magnus Strand,kanskje neste år
-19,2,94,146,19631,19701,15119,40,25,1000,1,0,10,Magnus Strand,kanskje neste år
-20,3,60,202,15583,15678,16039,35,9,1001,2,4,3,Magnus Strand,kanskje neste år
-21,1,48,48,14983,15179,14983,35,0,1000,0,0,0,Mikael Leksen,Mikkes masochister
-22,2,104,152,14022,14040,11925,30,0,1000,1,0,1,Mikael Leksen,Mikkes masochister
-23,3,30,178,47173,47179,27660,95,20,1002,2,4,3,Mikael Leksen,Mikkes masochister
+0,1,45,45,20393,20528,20393,45,0,1000,0,0,6,Magnus Aarli,Rohit Saggi
+1,2,135,180,2225,2253,2295,5,0,1000,0,0,16,Magnus Aarli,Rohit Saggi
+2,3,71,251,5607,5621,904,15,19,1002,2,0,6,Magnus Aarli,Rohit Saggi
+3,4,57,308,29102,29121,1989,60,61,1003,1,0,8,Magnus Aarli,Rohit Saggi
+4,5,160,468,91,91,60,1,30,1006,1,0,13,Magnus Aarli,Rohit Saggi
+5,6,48,516,15495,15518,203,35,9,1010,1,0,0,Magnus Aarli,Rohit Saggi
+6,1,47,47,16535,16752,16535,40,0,1000,0,0,15,Trond Flaarønning,Troilldomsfjellet
+7,2,144,191,447,502,523,1,0,1000,0,0,4,Trond Flaarønning,Troilldomsfjellet
+8,3,45,236,34479,34505,3470,70,0,1002,1,0,15,Trond Flaarønning,Troilldomsfjellet
+9,4,70,306,8827,8856,2342,20,8,1002,2,0,12,Trond Flaarønning,Troilldomsfjellet
+10,5,128,434,2880,2895,1476,10,22,1007,1,0,33,Trond Flaarønning,Troilldomsfjellet
+11,6,69,503,1404,1417,541,5,61,1012,1,0,4,Trond Flaarønning,Troilldomsfjellet
+12,1,38,38,32756,32942,32756,70,0,1000,0,0,25,Stian Monsø,Skatval Psykiatriske
+13,2,147,185,268,270,1470,1,0,1000,1,0,13,Stian Monsø,Skatval Psykiatriske
+14,3,73,258,4292,4314,389,10,15,1002,1,0,8,Stian Monsø,Skatval Psykiatriske
+15,4,51,309,37701,37723,1821,75,10,1003,1,0,7,Stian Monsø,Skatval Psykiatriske
+16,5,133,442,1921,1933,860,5,5,1009,1,0,13,Stian Monsø,Skatval Psykiatriske
+17,6,47,489,16029,16096,1298,35,5,1011,0,0,10,Stian Monsø,Skatval Psykiatriske
+18,1,43,43,23974,24174,23974,55,0,1000,0,0,4,Vegard Solberg,Kolvereids utvalgte
+19,2,148,191,185,197,523,1,0,1000,0,0,12,Vegard Solberg,Kolvereids utvalgte
+20,3,54,245,21806,21895,1564,45,0,1002,0,0,3,Vegard Solberg,Kolvereids utvalgte
+21,4,68,313,11456,11481,1250,25,1,1004,2,0,5,Vegard Solberg,Kolvereids utvalgte
+22,5,119,432,5364,5379,1662,15,15,1006,1,0,4,Vegard Solberg,Kolvereids utvalgte
+23,6,46,478,18315,18341,2210,40,56,1005,2,0,6,Vegard Solberg,Kolvereids utvalgte
+24,1,33,33,39615,39631,39615,90,5,1000,0,0,9,Yngve Sikko,Shinkansen
+25,2,126,159,5201,5204,8802,15,5,1000,1,0,4,Yngve Sikko,Shinkansen
+26,3,44,203,34901,34915,15387,70,20,1002,0,0,10,Yngve Sikko,Shinkansen
+27,4,65,268,15436,15446,14136,35,17,1003,1,0,5,Yngve Sikko,Shinkansen
+28,5,127,395,3151,3155,7058,10,7,1011,1,0,11,Yngve Sikko,Shinkansen
+29,6,68,459,1665,1669,4291,5,30,1014,2,4,5,Yngve Sikko,Shinkansen
+30,1,47,47,16535,16675,16535,40,0,1000,0,0,4,Haakon Edvardsen,Jon Inge Høilandslag
+31,2,105,152,13171,13180,11580,30,0,1000,0,0,6,Haakon Edvardsen,Jon Inge Høilandslag
+32,3,67,219,8620,8633,8908,20,19,1001,2,0,10,Haakon Edvardsen,Jon Inge Høilandslag
+33,4,56,275,29661,29683,11307,60,19,1003,0,0,4,Haakon Edvardsen,Jon Inge Høilandslag
+34,5,126,393,3556,3562,7562,10,12,1009,4,8,3,Haakon Edvardsen,Jon Inge Høilandslag
+35,6,58,451,5699,5719,5454,15,63,1012,1,0,7,Haakon Edvardsen,Jon Inge Høilandslag
+36,1,48,48,14983,15179,14983,35,0,1000,0,0,0,Mikael Leksen,Mikkes masochister
+37,2,104,152,14022,14040,11925,30,0,1000,1,0,1,Mikael Leksen,Mikkes masochister
+38,3,30,178,47184,47190,27665,95,20,1002,2,4,3,Mikael Leksen,Mikkes masochister
+39,4,70,248,7953,8020,22820,20,12,1007,0,0,4,Mikael Leksen,Mikkes masochister
+40,5,131,379,2239,2252,10181,5,12,1012,0,0,11,Mikael Leksen,Mikkes masochister
+41,6,50,429,12351,12411,8802,25,12,1017,0,0,2,Mikael Leksen,Mikkes masochister
+42,1,52,52,9536,10217,9536,25,0,1000,0,0,3,Magnus Strand,kanskje neste år
+43,2,94,146,19631,19701,15119,40,25,1000,1,0,10,Magnus Strand,kanskje neste år
+44,3,60,202,15601,15696,16046,35,9,1001,2,4,3,Magnus Strand,kanskje neste år
+45,4,61,263,21267,21731,16351,45,9,1001,0,0,1,Magnus Strand,kanskje neste år
+46,5,84,347,20268,20400,17270,45,9,1000,0,0,0,Magnus Strand,kanskje neste år
+47,6,45,392,19947,20025,16254,40,21,998,3,0,0,Magnus Strand,kanskje neste år

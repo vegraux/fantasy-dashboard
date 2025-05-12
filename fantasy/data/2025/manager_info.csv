@@ -1,9 +1,9 @@
 ,id,event_total,player_name,rank,last_rank,rank_sort,total,entry,entry_name,has_played
-0,35848,73,Stian Monsø,1,3,1,258,5222,Skatval Psykiatriske,True
-1,35851,71,Magnus Aarli,2,4,2,251,2816,Rohit Saggi,True
-2,35849,54,Vegard Solberg,3,1,3,245,5301,Kolvereids utvalgte,True
-3,35852,45,Trond Flaarønning,4,1,4,236,3390,Troilldomsfjellet,True
-4,35847,67,Haakon Edvardsen,5,6,5,219,2028,Jon Inge Høilandslag,True
-5,35850,44,Yngve Sikko,6,5,6,203,797,Shinkansen,True
-6,177113,60,Magnus Strand,7,8,7,202,25615,kanskje neste år,True
-7,35846,30,Mikael Leksen,8,7,8,178,5492,Mikkes masochister,True
+0,35851,48,Magnus Aarli,1,1,1,516,2816,Rohit Saggi,True
+1,35852,69,Trond Flaarønning,2,3,2,503,3390,Troilldomsfjellet,True
+2,35848,47,Stian Monsø,3,2,3,489,5222,Skatval Psykiatriske,True
+3,35849,46,Vegard Solberg,4,4,4,478,5301,Kolvereids utvalgte,True
+4,35850,68,Yngve Sikko,5,5,5,459,797,Shinkansen,True
+5,35847,58,Haakon Edvardsen,6,6,6,451,2028,Jon Inge Høilandslag,True
+6,35846,50,Mikael Leksen,7,7,7,429,5492,Mikkes masochister,True
+7,177113,45,Magnus Strand,8,8,8,392,25615,kanskje neste år,True
