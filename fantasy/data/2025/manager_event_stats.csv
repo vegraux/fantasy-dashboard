@@ -13,109 +13,133 @@
 11,12,45,866,16501,16535,530,35,10,1030,2,0,6,Trond Flaarønning,Troilldomsfjellet
 12,13,75,941,17669,17725,670,35,10,1038,0,0,12,Trond Flaarønning,Troilldomsfjellet
 13,14,77,1018,1165,1171,452,5,17,1037,2,0,5,Trond Flaarønning,Troilldomsfjellet
-14,15,81,1099,741,748,241,5,17,1042,1,0,3,Trond Flaarønning,Troilldomsfjellet
-15,1,38,38,32756,32942,32756,70,0,1000,0,0,25,Stian Monsø,Skatval Psykiatriske
-16,2,147,185,268,270,1470,1,0,1000,1,0,13,Stian Monsø,Skatval Psykiatriske
-17,3,73,258,4292,4314,389,10,15,1002,1,0,8,Stian Monsø,Skatval Psykiatriske
-18,4,51,309,37701,37723,1821,75,10,1003,1,0,7,Stian Monsø,Skatval Psykiatriske
-19,5,133,442,1921,1933,860,5,5,1009,1,0,13,Stian Monsø,Skatval Psykiatriske
-20,6,47,489,16029,16096,1298,35,5,1011,0,0,10,Stian Monsø,Skatval Psykiatriske
-21,7,40,529,31650,31740,1868,65,10,1015,0,0,22,Stian Monsø,Skatval Psykiatriske
-22,8,98,627,6884,6902,2004,15,0,1017,1,0,6,Stian Monsø,Skatval Psykiatriske
-23,9,73,700,6988,7017,1717,15,19,1020,1,0,8,Stian Monsø,Skatval Psykiatriske
-24,10,52,752,24127,24156,2390,50,10,1028,1,0,1,Stian Monsø,Skatval Psykiatriske
-25,11,27,779,36817,36927,2530,75,10,1028,1,0,2,Stian Monsø,Skatval Psykiatriske
-26,12,68,847,589,597,1227,5,29,1027,1,0,2,Stian Monsø,Skatval Psykiatriske
-27,13,100,947,1106,1109,493,5,67,1032,1,0,7,Stian Monsø,Skatval Psykiatriske
-28,14,62,1009,7105,7125,660,15,31,1037,1,0,2,Stian Monsø,Skatval Psykiatriske
-29,15,64,1073,9517,9552,720,20,20,1041,1,0,7,Stian Monsø,Skatval Psykiatriske
-30,1,45,45,20393,20528,20393,45,0,1000,0,0,6,Magnus Aarli,Rohit Saggi
-31,2,135,180,2225,2253,2295,5,0,1000,0,0,16,Magnus Aarli,Rohit Saggi
-32,3,71,251,5607,5621,904,15,19,1002,2,0,6,Magnus Aarli,Rohit Saggi
-33,4,57,308,29102,29121,1989,60,61,1003,1,0,8,Magnus Aarli,Rohit Saggi
-34,5,160,468,91,91,60,1,30,1006,1,0,13,Magnus Aarli,Rohit Saggi
-35,6,48,516,15495,15518,203,35,9,1010,1,0,0,Magnus Aarli,Rohit Saggi
-36,7,35,551,41001,41019,583,85,41,1012,1,0,11,Magnus Aarli,Rohit Saggi
-37,8,89,640,12958,13003,1167,30,41,1010,0,0,15,Magnus Aarli,Rohit Saggi
-38,9,67,707,13873,13893,1276,30,25,1007,1,0,3,Magnus Aarli,Rohit Saggi
-39,10,80,787,861,873,570,5,2,1013,0,0,21,Magnus Aarli,Rohit Saggi
-40,11,29,816,30072,30150,535,60,2,1021,0,0,8,Magnus Aarli,Rohit Saggi
-41,12,51,867,8752,8776,507,20,36,1021,2,0,4,Magnus Aarli,Rohit Saggi
-42,13,89,956,4514,4536,306,10,36,1029,0,0,16,Magnus Aarli,Rohit Saggi
-43,14,49,1005,17707,17752,766,35,36,1033,0,0,4,Magnus Aarli,Rohit Saggi
-44,15,52,1057,21641,21651,1271,45,22,1035,1,0,6,Magnus Aarli,Rohit Saggi
-45,1,43,43,23974,24174,23974,55,0,1000,0,0,4,Vegard Solberg,Kolvereids utvalgte
-46,2,148,191,185,197,523,1,0,1000,0,0,12,Vegard Solberg,Kolvereids utvalgte
-47,3,54,245,21806,21895,1564,45,0,1002,0,0,3,Vegard Solberg,Kolvereids utvalgte
-48,4,68,313,11456,11481,1250,25,1,1004,2,0,5,Vegard Solberg,Kolvereids utvalgte
-49,5,119,432,5364,5379,1662,15,15,1006,1,0,4,Vegard Solberg,Kolvereids utvalgte
-50,6,46,478,18315,18341,2210,40,56,1005,2,0,6,Vegard Solberg,Kolvereids utvalgte
-51,7,40,518,31650,31744,2946,65,56,1009,0,0,8,Vegard Solberg,Kolvereids utvalgte
-52,8,85,603,16715,16772,4113,35,56,1008,0,0,25,Vegard Solberg,Kolvereids utvalgte
-53,9,78,681,3243,3262,3209,10,32,1008,1,0,2,Vegard Solberg,Kolvereids utvalgte
-54,10,55,736,19247,19291,3738,40,6,1015,1,0,5,Vegard Solberg,Kolvereids utvalgte
-55,11,32,768,25009,25055,3485,50,27,1016,2,0,5,Vegard Solberg,Kolvereids utvalgte
-56,12,45,813,15542,15627,3536,35,8,1012,0,0,13,Vegard Solberg,Kolvereids utvalgte
-57,13,78,891,14001,14083,3474,30,8,1021,0,0,12,Vegard Solberg,Kolvereids utvalgte
-58,14,71,962,2522,2547,2777,5,8,1028,0,0,4,Vegard Solberg,Kolvereids utvalgte
-59,15,52,1014,20903,20943,3529,45,8,1032,0,0,19,Vegard Solberg,Kolvereids utvalgte
-60,1,47,47,16535,16675,16535,40,0,1000,0,0,4,Haakon Edvardsen,Jon Inge Høilandslag
-61,2,105,152,13171,13180,11580,30,0,1000,0,0,6,Haakon Edvardsen,Jon Inge Høilandslag
-62,3,67,219,8620,8633,8908,20,19,1001,2,0,10,Haakon Edvardsen,Jon Inge Høilandslag
-63,4,56,275,29661,29683,11307,60,19,1003,0,0,4,Haakon Edvardsen,Jon Inge Høilandslag
-64,5,126,393,3556,3562,7562,10,12,1009,4,8,3,Haakon Edvardsen,Jon Inge Høilandslag
-65,6,58,451,5699,5719,5454,15,63,1012,1,0,7,Haakon Edvardsen,Jon Inge Høilandslag
-66,7,54,505,9239,9267,4577,20,0,1011,0,0,18,Haakon Edvardsen,Jon Inge Høilandslag
-67,8,91,596,11300,11328,4897,25,0,1013,0,0,18,Haakon Edvardsen,Jon Inge Høilandslag
-68,9,70,666,9478,9524,4707,20,0,1017,0,0,8,Haakon Edvardsen,Jon Inge Høilandslag
-69,10,85,751,400,400,2508,1,11,1023,2,0,9,Haakon Edvardsen,Jon Inge Høilandslag
-70,11,29,780,31714,31742,2466,65,19,1029,1,0,5,Haakon Edvardsen,Jon Inge Høilandslag
-71,12,50,826,10247,10272,2555,20,6,1029,3,4,2,Haakon Edvardsen,Jon Inge Høilandslag
-72,13,75,901,18540,18568,2734,40,5,1035,1,0,3,Haakon Edvardsen,Jon Inge Høilandslag
-73,14,59,960,8640,8658,2957,20,5,1039,0,0,2,Haakon Edvardsen,Jon Inge Høilandslag
-74,15,52,1012,20903,20915,3702,45,5,1043,0,0,4,Haakon Edvardsen,Jon Inge Høilandslag
-75,1,33,33,39615,39631,39615,85,5,1000,0,0,9,Yngve Sikko,Shinkansen
-76,2,126,159,5201,5204,8802,15,5,1000,1,0,4,Yngve Sikko,Shinkansen
-77,3,44,203,34901,34915,15387,70,20,1002,0,0,10,Yngve Sikko,Shinkansen
-78,4,65,268,15436,15446,14136,35,17,1003,1,0,5,Yngve Sikko,Shinkansen
-79,5,127,395,3151,3155,7058,10,7,1011,1,0,11,Yngve Sikko,Shinkansen
-80,6,68,459,1665,1669,4291,5,30,1014,2,4,5,Yngve Sikko,Shinkansen
-81,7,53,512,11267,11276,3672,25,14,1016,1,0,23,Yngve Sikko,Shinkansen
-82,8,83,591,19722,19723,5506,40,11,1013,2,4,17,Yngve Sikko,Shinkansen
-83,9,54,645,30813,30814,7208,65,1,1016,1,0,14,Yngve Sikko,Shinkansen
-84,10,61,702,10958,10963,7279,25,6,1025,2,4,6,Yngve Sikko,Shinkansen
-85,11,28,730,34251,34266,7479,70,12,1029,1,0,6,Yngve Sikko,Shinkansen
-86,12,49,779,11054,11073,6928,25,48,1030,1,0,9,Yngve Sikko,Shinkansen
-87,13,76,855,17224,17229,6828,35,25,1038,1,0,14,Yngve Sikko,Shinkansen
-88,14,77,932,1029,1033,4873,5,25,1042,0,0,0,Yngve Sikko,Shinkansen
-89,15,64,996,9687,9688,4829,20,19,1042,2,0,1,Yngve Sikko,Shinkansen
-90,1,48,48,14983,15179,14983,35,0,1000,0,0,0,Mikael Leksen,Mikkes masochister
-91,2,104,152,14022,14040,11925,30,0,1000,1,0,1,Mikael Leksen,Mikkes masochister
-92,3,30,178,47184,47190,27665,95,20,1002,2,4,3,Mikael Leksen,Mikkes masochister
-93,4,70,248,7953,8020,22820,20,12,1007,0,0,4,Mikael Leksen,Mikkes masochister
-94,5,131,379,2239,2252,10181,5,12,1012,0,0,11,Mikael Leksen,Mikkes masochister
-95,6,50,429,12351,12411,8802,25,12,1017,0,0,2,Mikael Leksen,Mikkes masochister
-96,7,57,486,7076,7080,7380,15,11,1017,3,0,5,Mikael Leksen,Mikkes masochister
-97,8,83,569,18842,18905,8321,40,11,1018,0,0,13,Mikael Leksen,Mikkes masochister
-98,9,57,622,27338,27358,10257,55,0,1017,2,4,22,Mikael Leksen,Mikkes masochister
-99,10,50,672,26241,26344,11073,55,0,1022,0,0,3,Mikael Leksen,Mikkes masochister
-100,11,21,693,48566,48631,12473,95,0,1022,0,0,2,Mikael Leksen,Mikkes masochister
-101,12,29,722,40863,40867,14563,80,4,1023,3,0,2,Mikael Leksen,Mikkes masochister
-102,13,57,779,39067,39113,16820,80,4,1027,0,0,14,Mikael Leksen,Mikkes masochister
-103,14,55,834,11748,11823,15610,25,4,1028,0,0,3,Mikael Leksen,Mikkes masochister
-104,15,59,893,13909,13965,14984,30,4,1028,0,0,6,Mikael Leksen,Mikkes masochister
-105,1,52,52,9536,10217,9536,25,0,1000,0,0,3,Magnus Strand,kanskje neste år
-106,2,94,146,19631,19701,15119,40,25,1000,1,0,10,Magnus Strand,kanskje neste år
-107,3,60,202,15601,15696,16046,35,9,1001,2,4,3,Magnus Strand,kanskje neste år
-108,4,61,263,21267,21731,16351,45,9,1001,0,0,1,Magnus Strand,kanskje neste år
-109,5,84,347,20268,20400,17270,45,9,1000,0,0,0,Magnus Strand,kanskje neste år
-110,6,45,392,19947,20025,16254,40,21,998,3,0,0,Magnus Strand,kanskje neste år
-111,7,43,435,26087,26643,17466,55,21,1004,0,0,11,Magnus Strand,kanskje neste år
-112,8,76,511,27180,27608,18247,55,21,1005,0,0,13,Magnus Strand,kanskje neste år
-113,9,74,585,5552,5807,16072,15,21,1004,0,0,5,Magnus Strand,kanskje neste år
-114,10,53,638,21396,21847,16171,45,21,1008,0,0,0,Magnus Strand,kanskje neste år
-115,11,37,675,14200,14728,15284,30,21,1008,0,0,2,Magnus Strand,kanskje neste år
-116,12,46,721,14301,14634,14665,30,21,1008,0,0,0,Magnus Strand,kanskje neste år
-117,13,74,795,18984,19354,14433,40,21,1011,0,0,0,Magnus Strand,kanskje neste år
-118,14,23,818,48417,48589,17837,95,21,1011,0,0,7,Magnus Strand,kanskje neste år
-119,15,28,846,43771,44075,21089,85,21,1011,0,0,23,Magnus Strand,kanskje neste år
+14,15,108,1126,662,666,227,5,17,1042,1,0,4,Trond Flaarønning,Troilldomsfjellet
+15,16,69,1195,6274,6293,254,15,0,1048,1,0,1,Trond Flaarønning,Troilldomsfjellet
+16,17,42,1237,10492,10544,269,25,3,1051,1,0,4,Trond Flaarønning,Troilldomsfjellet
+17,18,70,1307,3229,3254,261,10,11,1052,1,0,0,Trond Flaarønning,Troilldomsfjellet
+18,1,38,38,32756,32942,32756,70,0,1000,0,0,25,Stian Monsø,Skatval Psykiatriske
+19,2,147,185,268,270,1470,1,0,1000,1,0,13,Stian Monsø,Skatval Psykiatriske
+20,3,73,258,4292,4314,389,10,15,1002,1,0,8,Stian Monsø,Skatval Psykiatriske
+21,4,51,309,37701,37723,1821,75,10,1003,1,0,7,Stian Monsø,Skatval Psykiatriske
+22,5,133,442,1921,1933,860,5,5,1009,1,0,13,Stian Monsø,Skatval Psykiatriske
+23,6,47,489,16029,16096,1298,35,5,1011,0,0,10,Stian Monsø,Skatval Psykiatriske
+24,7,40,529,31650,31740,1868,65,10,1015,0,0,22,Stian Monsø,Skatval Psykiatriske
+25,8,98,627,6884,6902,2004,15,0,1017,1,0,6,Stian Monsø,Skatval Psykiatriske
+26,9,73,700,6988,7017,1717,15,19,1020,1,0,8,Stian Monsø,Skatval Psykiatriske
+27,10,52,752,24127,24156,2390,50,10,1028,1,0,1,Stian Monsø,Skatval Psykiatriske
+28,11,27,779,36817,36927,2530,75,10,1028,1,0,2,Stian Monsø,Skatval Psykiatriske
+29,12,68,847,589,597,1227,5,29,1027,1,0,2,Stian Monsø,Skatval Psykiatriske
+30,13,100,947,1106,1109,493,5,67,1032,1,0,7,Stian Monsø,Skatval Psykiatriske
+31,14,62,1009,7105,7125,660,15,31,1037,1,0,2,Stian Monsø,Skatval Psykiatriske
+32,15,85,1094,11953,11987,844,25,20,1041,1,0,7,Stian Monsø,Skatval Psykiatriske
+33,16,51,1145,27793,27850,1487,55,17,1045,0,0,9,Stian Monsø,Skatval Psykiatriske
+34,17,51,1196,2109,2143,1151,5,4,1056,1,0,4,Stian Monsø,Skatval Psykiatriske
+35,18,75,1271,1509,1535,909,5,0,1058,1,0,1,Stian Monsø,Skatval Psykiatriske
+36,1,45,45,20393,20528,20393,45,0,1000,0,0,6,Magnus Aarli,Rohit Saggi
+37,2,135,180,2225,2253,2295,5,0,1000,0,0,16,Magnus Aarli,Rohit Saggi
+38,3,71,251,5607,5621,904,15,19,1002,2,0,6,Magnus Aarli,Rohit Saggi
+39,4,57,308,29102,29121,1989,60,61,1003,1,0,8,Magnus Aarli,Rohit Saggi
+40,5,160,468,91,91,60,1,30,1006,1,0,13,Magnus Aarli,Rohit Saggi
+41,6,48,516,15495,15518,203,35,9,1010,1,0,0,Magnus Aarli,Rohit Saggi
+42,7,35,551,41001,41019,583,85,41,1012,1,0,11,Magnus Aarli,Rohit Saggi
+43,8,89,640,12958,13003,1167,30,41,1010,0,0,15,Magnus Aarli,Rohit Saggi
+44,9,67,707,13873,13893,1276,30,25,1007,1,0,3,Magnus Aarli,Rohit Saggi
+45,10,80,787,861,873,570,5,2,1013,0,0,21,Magnus Aarli,Rohit Saggi
+46,11,29,816,30072,30150,535,60,2,1021,0,0,8,Magnus Aarli,Rohit Saggi
+47,12,51,867,8752,8776,507,20,36,1021,2,0,4,Magnus Aarli,Rohit Saggi
+48,13,89,956,4514,4536,306,10,36,1029,0,0,16,Magnus Aarli,Rohit Saggi
+49,14,49,1005,17707,17752,766,35,36,1033,0,0,4,Magnus Aarli,Rohit Saggi
+50,15,72,1077,24860,24864,1480,50,22,1035,1,0,6,Magnus Aarli,Rohit Saggi
+51,16,58,1135,19458,19474,1912,40,11,1037,2,0,1,Magnus Aarli,Rohit Saggi
+52,17,30,1165,31766,31772,2459,65,10,1044,2,0,0,Magnus Aarli,Rohit Saggi
+53,18,73,1234,2218,2230,2263,5,30,1043,2,4,0,Magnus Aarli,Rohit Saggi
+54,1,43,43,23974,24174,23974,55,0,1000,0,0,4,Vegard Solberg,Kolvereids utvalgte
+55,2,148,191,185,197,523,1,0,1000,0,0,12,Vegard Solberg,Kolvereids utvalgte
+56,3,54,245,21806,21895,1564,45,0,1002,0,0,3,Vegard Solberg,Kolvereids utvalgte
+57,4,68,313,11456,11481,1250,25,1,1004,2,0,5,Vegard Solberg,Kolvereids utvalgte
+58,5,119,432,5364,5379,1662,15,15,1006,1,0,4,Vegard Solberg,Kolvereids utvalgte
+59,6,46,478,18315,18341,2210,40,56,1005,2,0,6,Vegard Solberg,Kolvereids utvalgte
+60,7,40,518,31650,31744,2946,65,56,1009,0,0,8,Vegard Solberg,Kolvereids utvalgte
+61,8,85,603,16715,16772,4113,35,56,1008,0,0,25,Vegard Solberg,Kolvereids utvalgte
+62,9,78,681,3243,3262,3209,10,32,1008,1,0,2,Vegard Solberg,Kolvereids utvalgte
+63,10,55,736,19247,19291,3738,40,6,1015,1,0,5,Vegard Solberg,Kolvereids utvalgte
+64,11,32,768,25009,25055,3485,50,27,1016,2,0,5,Vegard Solberg,Kolvereids utvalgte
+65,12,45,813,15542,15627,3536,35,8,1012,0,0,13,Vegard Solberg,Kolvereids utvalgte
+66,13,78,891,14001,14083,3474,30,8,1021,0,0,12,Vegard Solberg,Kolvereids utvalgte
+67,14,71,962,2522,2547,2777,5,8,1028,0,0,4,Vegard Solberg,Kolvereids utvalgte
+68,15,76,1038,20049,20099,3551,40,8,1032,0,0,21,Vegard Solberg,Kolvereids utvalgte
+69,16,79,1117,1666,1667,2766,5,27,1037,3,0,18,Vegard Solberg,Kolvereids utvalgte
+70,17,37,1154,18013,18115,3024,35,27,1048,0,0,0,Vegard Solberg,Kolvereids utvalgte
+71,18,66,1220,5534,5573,2915,15,22,1049,2,0,16,Vegard Solberg,Kolvereids utvalgte
+72,1,33,33,39615,39631,39615,85,5,1000,0,0,9,Yngve Sikko,Shinkansen
+73,2,126,159,5201,5204,8802,15,5,1000,1,0,4,Yngve Sikko,Shinkansen
+74,3,44,203,34901,34915,15387,70,20,1002,0,0,10,Yngve Sikko,Shinkansen
+75,4,65,268,15436,15446,14136,35,17,1003,1,0,5,Yngve Sikko,Shinkansen
+76,5,127,395,3151,3155,7058,10,7,1011,1,0,11,Yngve Sikko,Shinkansen
+77,6,68,459,1665,1669,4291,5,30,1014,2,4,5,Yngve Sikko,Shinkansen
+78,7,53,512,11267,11276,3672,25,14,1016,1,0,23,Yngve Sikko,Shinkansen
+79,8,83,591,19722,19723,5506,40,11,1013,2,4,17,Yngve Sikko,Shinkansen
+80,9,54,645,30813,30814,7208,65,1,1016,1,0,14,Yngve Sikko,Shinkansen
+81,10,61,702,10958,10963,7279,25,6,1025,2,4,6,Yngve Sikko,Shinkansen
+82,11,28,730,34251,34266,7479,70,12,1029,1,0,6,Yngve Sikko,Shinkansen
+83,12,49,779,11054,11073,6928,25,48,1030,1,0,9,Yngve Sikko,Shinkansen
+84,13,76,855,17224,17229,6828,35,25,1038,1,0,14,Yngve Sikko,Shinkansen
+85,14,77,932,1029,1033,4873,5,25,1042,0,0,0,Yngve Sikko,Shinkansen
+86,15,84,1016,13022,13026,5084,30,19,1042,2,0,1,Yngve Sikko,Shinkansen
+87,16,77,1093,2110,2113,4133,5,12,1043,1,0,2,Yngve Sikko,Shinkansen
+88,17,46,1139,5617,5626,3858,15,27,1050,1,0,8,Yngve Sikko,Shinkansen
+89,18,65,1204,6034,6045,3720,15,35,1051,1,0,0,Yngve Sikko,Shinkansen
+90,1,47,47,16535,16675,16535,40,0,1000,0,0,4,Haakon Edvardsen,Jon Inge Høilandslag
+91,2,105,152,13171,13180,11580,30,0,1000,0,0,6,Haakon Edvardsen,Jon Inge Høilandslag
+92,3,67,219,8620,8633,8908,20,19,1001,2,0,10,Haakon Edvardsen,Jon Inge Høilandslag
+93,4,56,275,29661,29683,11307,60,19,1003,0,0,4,Haakon Edvardsen,Jon Inge Høilandslag
+94,5,126,393,3556,3562,7562,10,12,1009,4,8,3,Haakon Edvardsen,Jon Inge Høilandslag
+95,6,58,451,5699,5719,5454,15,63,1012,1,0,7,Haakon Edvardsen,Jon Inge Høilandslag
+96,7,54,505,9239,9267,4577,20,0,1011,0,0,18,Haakon Edvardsen,Jon Inge Høilandslag
+97,8,91,596,11300,11328,4897,25,0,1013,0,0,18,Haakon Edvardsen,Jon Inge Høilandslag
+98,9,70,666,9478,9524,4707,20,0,1017,0,0,8,Haakon Edvardsen,Jon Inge Høilandslag
+99,10,85,751,400,400,2508,1,11,1023,2,0,9,Haakon Edvardsen,Jon Inge Høilandslag
+100,11,29,780,31714,31742,2466,65,19,1029,1,0,5,Haakon Edvardsen,Jon Inge Høilandslag
+101,12,50,826,10247,10272,2555,20,6,1029,3,4,2,Haakon Edvardsen,Jon Inge Høilandslag
+102,13,75,901,18540,18568,2734,40,5,1035,1,0,3,Haakon Edvardsen,Jon Inge Høilandslag
+103,14,59,960,8640,8658,2957,20,5,1039,0,0,2,Haakon Edvardsen,Jon Inge Høilandslag
+104,15,65,1025,30727,30742,4448,60,5,1043,0,0,15,Haakon Edvardsen,Jon Inge Høilandslag
+105,16,22,1047,50263,50263,7383,100,25,1045,3,0,2,Haakon Edvardsen,Jon Inge Høilandslag
+106,17,22,1069,41992,41992,8995,85,0,1046,1,0,0,Haakon Edvardsen,Jon Inge Høilandslag
+107,18,39,1104,31606,31606,10797,65,40,1041,2,4,0,Haakon Edvardsen,Jon Inge Høilandslag
+108,1,48,48,14983,15179,14983,35,0,1000,0,0,0,Mikael Leksen,Mikkes masochister
+109,2,104,152,14022,14040,11925,30,0,1000,1,0,1,Mikael Leksen,Mikkes masochister
+110,3,30,178,47184,47190,27665,95,20,1002,2,4,3,Mikael Leksen,Mikkes masochister
+111,4,70,248,7953,8020,22820,20,12,1007,0,0,4,Mikael Leksen,Mikkes masochister
+112,5,131,379,2239,2252,10181,5,12,1012,0,0,11,Mikael Leksen,Mikkes masochister
+113,6,50,429,12351,12411,8802,25,12,1017,0,0,2,Mikael Leksen,Mikkes masochister
+114,7,57,486,7076,7080,7380,15,11,1017,3,0,5,Mikael Leksen,Mikkes masochister
+115,8,83,569,18842,18905,8321,40,11,1018,0,0,13,Mikael Leksen,Mikkes masochister
+116,9,57,622,27338,27358,10257,55,0,1017,2,4,22,Mikael Leksen,Mikkes masochister
+117,10,50,672,26241,26344,11073,55,0,1022,0,0,3,Mikael Leksen,Mikkes masochister
+118,11,21,693,48566,48631,12473,95,0,1022,0,0,2,Mikael Leksen,Mikkes masochister
+119,12,29,722,40863,40867,14563,80,4,1023,3,0,2,Mikael Leksen,Mikkes masochister
+120,13,57,779,39067,39113,16820,80,4,1027,0,0,14,Mikael Leksen,Mikkes masochister
+121,14,55,834,11748,11823,15610,25,4,1028,0,0,3,Mikael Leksen,Mikkes masochister
+122,15,72,906,24046,24115,16248,50,4,1028,0,0,9,Mikael Leksen,Mikkes masochister
+123,16,47,953,32222,32275,17052,65,4,1028,0,0,8,Mikael Leksen,Mikkes masochister
+124,17,48,1001,3440,3493,15833,10,4,1026,0,0,0,Mikael Leksen,Mikkes masochister
+125,18,47,1048,21017,21084,15973,45,4,1024,0,0,0,Mikael Leksen,Mikkes masochister
+126,1,52,52,9536,10217,9536,25,0,1000,0,0,3,Magnus Strand,kanskje neste år
+127,2,94,146,19631,19701,15119,40,25,1000,1,0,10,Magnus Strand,kanskje neste år
+128,3,60,202,15601,15696,16046,35,9,1001,2,4,3,Magnus Strand,kanskje neste år
+129,4,61,263,21267,21731,16351,45,9,1001,0,0,1,Magnus Strand,kanskje neste år
+130,5,84,347,20268,20400,17270,45,9,1000,0,0,0,Magnus Strand,kanskje neste år
+131,6,45,392,19947,20025,16254,40,21,998,3,0,0,Magnus Strand,kanskje neste år
+132,7,43,435,26087,26643,17466,55,21,1004,0,0,11,Magnus Strand,kanskje neste år
+133,8,76,511,27180,27608,18247,55,21,1005,0,0,13,Magnus Strand,kanskje neste år
+134,9,74,585,5552,5807,16072,15,21,1004,0,0,5,Magnus Strand,kanskje neste år
+135,10,53,638,21396,21847,16171,45,21,1008,0,0,0,Magnus Strand,kanskje neste år
+136,11,37,675,14200,14728,15284,30,21,1008,0,0,2,Magnus Strand,kanskje neste år
+137,12,46,721,14301,14634,14665,30,21,1008,0,0,0,Magnus Strand,kanskje neste år
+138,13,74,795,18984,19354,14433,40,21,1011,0,0,0,Magnus Strand,kanskje neste år
+139,14,23,818,48417,48589,17837,95,21,1011,0,0,7,Magnus Strand,kanskje neste år
+140,15,66,884,29771,30134,18996,60,21,1011,0,0,1,Magnus Strand,kanskje neste år
+141,16,49,933,30120,30432,19513,60,21,1012,0,0,0,Magnus Strand,kanskje neste år
+142,17,22,955,40883,41331,21193,80,21,1014,0,0,0,Magnus Strand,kanskje neste år
+143,18,35,990,34613,34977,22298,70,21,1013,0,0,0,Magnus Strand,kanskje neste år
